@@ -50,8 +50,8 @@ set visualbell
 " Do word wrapping 
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
 
-" Shortcut for entering information
-:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
+" Shortcut for having date in the format I prefer
+:nmap <Leader>date <Esc>!!date +%a, %b. %d, %Y<Esc>
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree /home/habibilus/code/python_code/babytux/
@@ -63,6 +63,9 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Word count
 :map \c g<C-G>
+
+" Save a file you edited in vim/vi without the needed permissions
+:map <Leader>save <Esc>:w !sudo tee %<CR>
 
 " Remap for ShowFunc 
 map  <F2>   <Plug>ShowFunc
@@ -82,6 +85,9 @@ abbreviate Credil CREDIL
 
 " No backup thanks to source control but might change this later
 set nobackup
+
+" Shortcut for entering information
+:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
 
 if has ("autocmd")
