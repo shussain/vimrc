@@ -59,7 +59,6 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Silly shortcut for summing up entries in custom finance tracker
 :nmap <Leader>math <Esc>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR>
-":nmap <Leader>math <Esc>:%s/[a-zA-Z]* [0-9]*
 
 " Word count
 :map \c g<C-G>
@@ -95,6 +94,9 @@ if has ("autocmd")
   " filetype plugin on indent
   filetype plugin on
 
+  " Automatically remove all trailing whitespace before saving
+  autocmd BufWritePre * :%s/\s\+$//e
+  
   " Java code.
   augroup java
     autocmd BufReadPre,FileReadPre      *.java set nowrap columns=100 lines=40 
