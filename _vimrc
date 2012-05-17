@@ -73,7 +73,6 @@ map! <F2>   <Plug>ShowFunc
 " Spelling changes. fix common typos and mistakes I make
 abbreviate teh the
 abbreviate eg e.g.
-abbreviate e.g e.g.
 abbreviate etc etc.
 abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
