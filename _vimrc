@@ -9,7 +9,7 @@ behave mswin
 set showmode
 set showcmd
 
-" Formatting 
+" Formatting
 set number
 set ruler
 set encoding=utf-8
@@ -42,12 +42,12 @@ set visualbell
 :nmap <Leader><Tab> gt<CR>
 
 " Run ctags
-:nmap <Leader>] <Esc>:!ctags -R .<CR> 
+:nmap <Leader>] <Esc>:!ctags -R .<CR>
 
 " Get lines inserted
 :nmap <Leader>- <Esc>a-----<Esc>
 
-" Do word wrapping 
+" Do word wrapping
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
 
 " Shortcut for having date in the format I prefer
@@ -66,13 +66,14 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
-" Remap for ShowFunc 
+" Remap for ShowFunc
 map  <F2>   <Plug>ShowFunc
-map! <F2>   <Plug>ShowFunc 
+map! <F2>   <Plug>ShowFunc
 
 " Spelling changes. fix common typos and mistakes I make
 abbreviate teh the
 abbreviate eg e.g.
+abbreviate e.g e.g.
 abbreviate etc etc.
 abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
@@ -96,17 +97,17 @@ if has ("autocmd")
 
   " Automatically remove all trailing whitespace before saving
   autocmd BufWritePre * :%s/\s\+$//e
-  
+
   " Java code.
   augroup java
-    autocmd BufReadPre,FileReadPre      *.java set nowrap columns=100 lines=40 
+    autocmd BufReadPre,FileReadPre      *.java set nowrap columns=100 lines=40
     autocmd BufReadPre,FileReadPre      *.java set syntax=on
     autocmd BufReadPre,FileReadPre      *.java colorscheme murphy
   augroup END
 
   " Python
   augroup py
-    autocmd BufReadPre,FileReadPre      *.py set nowrap columns=100 lines=40 
+    autocmd BufReadPre,FileReadPre      *.py set nowrap columns=100 lines=40
     autocmd BufReadPre,FileReadPre      *.py set syntax=on
     autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
     autocmd BufReadPre,FileReadPre      *.py set tabstop=4 shiftwidth=4 expandtab
@@ -126,20 +127,20 @@ if has ("autocmd")
   augroup END
 
   augroup cs
-    autocmd BufReadPre,FileReadPre      *.cs set nowrap columns=100 
+    autocmd BufReadPre,FileReadPre      *.cs set nowrap columns=100
     autocmd BufReadPre,FileReadPre      *.cs set syntax=on
     autocmd BufReadPre,FileReadPre      *.cs colorscheme murphy
   augroup END
- 
+
   augroup aspx
-    autocmd BufReadPre,FileReadPre      *.aspx set nowrap columns=100 lines=40 
+    autocmd BufReadPre,FileReadPre      *.aspx set nowrap columns=100 lines=40
     autocmd BufReadPre,FileReadPre      *.aspx set syntax=aspvbs
     autocmd BufReadPre,FileReadPre      *.aspx colorscheme zenburn
   augroup END
 
   " Properties file
   augroup properties
-    autocmd BufReadPre,FileReadPre      *.properties set nowrap columns=90 lines=20 
+    autocmd BufReadPre,FileReadPre      *.properties set nowrap columns=90 lines=20
     autocmd BufReadPre,FileReadPre      *.properties set syntax=off
     autocmd BufReadPre,FileReadPre      *.properties set syntax=off
     autocmd BufReadPre,FileReadPre      *.proeprties set tabstop=2 shiftwidth=2 expandtab
@@ -148,9 +149,9 @@ if has ("autocmd")
 
   " Texts file
   augroup mytext
-    autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak columns=120 
+    autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak columns=120
     autocmd BufReadPre,FileReadPre      *.txt set lines=30
-    autocmd BufReadPre,FileReadPre      *.txt set syntax=off 
+    autocmd BufReadPre,FileReadPre      *.txt set syntax=off
     autocmd BufReadPre,FileReadPre      *.txt set tabstop=2 shiftwidth=2 expandtab
     autocmd BufReadPre,FileReadPre      *.txt colorscheme slate
     autocmd BufReadPre,FileReadPre      *.txt set spell spelllang=en_ca
@@ -164,9 +165,9 @@ if has ("autocmd")
   set wrapmargin=8
   set nowrap
   set lines=22
-  
+
   " Graphical settings
-  colorscheme darkblue 
+  colorscheme darkblue
   set nowrap columns=100 lines=30
 
   set tabstop=4
@@ -177,4 +178,4 @@ if has ("autocmd")
 endif "if has
 
 
-"code folding = set foldenable 
+"code folding = set foldenable
