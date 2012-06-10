@@ -51,7 +51,7 @@ set visualbell
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
 
 " Shortcut for having date in the format I prefer
-:nmap <Leader>date <Esc>!!date +%a, %b. %d, %Y<Esc>
+:nmap <Leader>date <Esc>!!date '+%A, %B %d, %Y'<Esc>
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree /home/habibilus/code/python_code/babytux/
@@ -148,8 +148,7 @@ if has ("autocmd")
 
   " Texts file
   augroup mytext
-    autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak columns=120
-    autocmd BufReadPre,FileReadPre      *.txt set lines=30
+    autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
     autocmd BufReadPre,FileReadPre      *.txt set syntax=off
     autocmd BufReadPre,FileReadPre      *.txt set tabstop=2 shiftwidth=2 expandtab
     autocmd BufReadPre,FileReadPre      *.txt colorscheme slate
