@@ -54,7 +54,7 @@ set visualbell
 :nmap <Leader>date <Esc>!!date '+%A, %B %d, %Y'<Esc>
 
 " NerdTree app
-:nmap <Leader>n <Esc>:NERDTree /home/habibilus/code/python_code/babytux/
+:nmap <Leader>n <Esc>:NERDTree /home/habibilus/dnsx-monitor/src
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Silly shortcut for summing up entries in custom finance tracker
@@ -65,6 +65,9 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
+
+" Shortcut for entering information
+:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
 " Remap for ShowFunc
 map  <F2>   <Plug>ShowFunc
@@ -79,15 +82,13 @@ abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
 abbreviate thier their
 abbreviate definately definitely
-abbreviate credil CREDIL
 abbreviate Credil CREDIL
 
 " No backup thanks to source control but might change this later
 set nobackup
 
-" Shortcut for entering information
-:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
-
+"Auto complete - will pull from keywords in the current file, other buffers (closed or still open), and from the current tags file
+set complete=.,b,u,]
 
 if has ("autocmd")
   " Enabled file type detection and file-type specific plugins.
