@@ -51,7 +51,7 @@ set visualbell
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
 
 " Shortcut for having date in the format I prefer
-:nmap <Leader>date <Esc>!!date '+%A, %B %d, %Y'<Esc>
+:nmap <Leader>date <Esc>!!date +%a, %b. %d, %Y<Esc>
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree /home/habibilus/dnsx-monitor/src
@@ -66,12 +66,18 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
-" Shortcut for entering information
-:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
-
 " Remap for ShowFunc
 map  <F2>   <Plug>ShowFunc
 map! <F2>   <Plug>ShowFunc
+
+" Key mapping for web searches
+function! Terms(prompt)
+    call inputsave()
+    let searchterm = input(a:prompt . ': ')
+    call inputrestore()
+    return searchterm
+endfunction
+map <leader>f :! /usr/bin/chromium-browser 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
 
 " Spelling changes. fix common typos and mistakes I make
 abbreviate teh the
@@ -87,8 +93,9 @@ abbreviate Credil CREDIL
 " No backup thanks to source control but might change this later
 set nobackup
 
-"Auto complete - will pull from keywords in the current file, other buffers (closed or still open), and from the current tags file
-set complete=.,b,u,]
+" Shortcut for entering information
+:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
+
 
 if has ("autocmd")
   " Enabled file type detection and file-type specific plugins.
@@ -150,6 +157,7 @@ if has ("autocmd")
   " Texts file
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
+    autocmd BufReadPre,FileReadPre      *.txt set lines=30
     autocmd BufReadPre,FileReadPre      *.txt set syntax=off
     autocmd BufReadPre,FileReadPre      *.txt set tabstop=2 shiftwidth=2 expandtab
     autocmd BufReadPre,FileReadPre      *.txt colorscheme slate
