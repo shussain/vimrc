@@ -11,7 +11,7 @@ Personal .vimrc and content of .vim directory
 * ShowFunc
 * snipMate
 * statline
-
+* netrw
 
 ## Color theme
 * sunburn

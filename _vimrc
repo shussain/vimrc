@@ -1,6 +1,6 @@
 set nocompatible
 source /usr/share/vim/vim73/vimrc_example.vim
-source /usr/share/vim/vim73/mswin.vim
+"source /usr/share/vim/vim73/mswin.vim
 behave mswin
 
 " Initial restarting
@@ -27,6 +27,8 @@ set smartcase
 " Set visual bell  instead of beep
 " Good when not wearing earphone at work
 set visualbell
+
+set shell=/bin/zsh
 
 " Set the global map leader variable so that:
 :let mapleader = ","
@@ -129,7 +131,6 @@ if has ("autocmd")
     autocmd BufReadPre,FileReadPre      *.rb set syntax=on
     autocmd BufReadPre,FileReadPre      *.rb set tabstop=2 shiftwidth=2 bs=2 expandtab
     autocmd BufReadPre,FileReadPre      *.rb set smarttab autowrite
-    autocmd BufReadPre,FileReadPre      *.rb set ff=dos
     autocmd BufReadPre,FileReadPre      *.rb colorscheme evening
   augroup END
 
