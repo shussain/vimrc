@@ -65,7 +65,7 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 :nmap <Leader>math <Esc>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR>
 
 " Word count
-:map \c g<C-G>
+:map <Leader>c g<C-G>
 
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
