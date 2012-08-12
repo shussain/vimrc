@@ -1,7 +1,5 @@
 set nocompatible
 source /usr/share/vim/vim73/vimrc_example.vim
-"source /usr/share/vim/vim73/mswin.vim
-behave mswin
 
 " Initial restarting
 "autocmd!
@@ -19,6 +17,10 @@ set relativenumber
 
 " Autocomplete for file entry
 set wim=list:longest,full
+
+" Autocomplete for Ctrl-N and Ctrol-P. We are looking at open/hidden buffers
+" and tags
+set complete=.,b,u,t
 
 " Ignore cases for searching
 set ignorecase
@@ -68,9 +70,8 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
-" Remap for ShowFunc
-map  <F2>   <Plug>ShowFunc
-map! <F2>   <Plug>ShowFunc
+" Remap for Tagar
+nmap  <F2>   :TagbarToggle<CR>
 
 " Key mapping for web searches
 function! Terms(prompt)
