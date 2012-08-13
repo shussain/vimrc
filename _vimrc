@@ -36,8 +36,8 @@ set shell=/bin/zsh
 :let mapleader = ","
 
 " Make it easy to update/reload _vimrc
-:nmap <Leader>s :source _vimrc<CR>
-:nmap <Leader>v :e _vimrc<CR>
+:nmap <Leader>s :source $HOME/_vimrc<CR>
+:nmap <Leader>v :e $HOME/_vimrc<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
