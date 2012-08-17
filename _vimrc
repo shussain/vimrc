@@ -110,14 +110,14 @@ if has ("autocmd")
 
   " Java code.
   augroup java
-    autocmd BufReadPre,FileReadPre      *.java set nowrap columns=100 lines=40
+    autocmd BufReadPre,FileReadPre      *.java set nowrap
     autocmd BufReadPre,FileReadPre      *.java set syntax=on
     autocmd BufReadPre,FileReadPre      *.java colorscheme murphy
   augroup END
 
   " Python
   augroup py
-    autocmd BufReadPre,FileReadPre      *.py set nowrap columns=100 lines=40
+    autocmd BufReadPre,FileReadPre      *.py set nowrap
     autocmd BufReadPre,FileReadPre      *.py set syntax=on
     autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
     autocmd BufReadPre,FileReadPre      *.py set tabstop=4 shiftwidth=4 expandtab
@@ -136,20 +136,20 @@ if has ("autocmd")
   augroup END
 
   augroup cs
-    autocmd BufReadPre,FileReadPre      *.cs set nowrap columns=100
+    autocmd BufReadPre,FileReadPre      *.cs set nowrap
     autocmd BufReadPre,FileReadPre      *.cs set syntax=on
     autocmd BufReadPre,FileReadPre      *.cs colorscheme murphy
   augroup END
 
   augroup aspx
-    autocmd BufReadPre,FileReadPre      *.aspx set nowrap columns=100 lines=40
+    autocmd BufReadPre,FileReadPre      *.aspx set nowrap
     autocmd BufReadPre,FileReadPre      *.aspx set syntax=aspvbs
     autocmd BufReadPre,FileReadPre      *.aspx colorscheme zenburn
   augroup END
 
   " Properties file
   augroup properties
-    autocmd BufReadPre,FileReadPre      *.properties set nowrap columns=90 lines=20
+    autocmd BufReadPre,FileReadPre      *.properties set nowrap
     autocmd BufReadPre,FileReadPre      *.properties set syntax=off
     autocmd BufReadPre,FileReadPre      *.properties set syntax=off
     autocmd BufReadPre,FileReadPre      *.proeprties set tabstop=2 shiftwidth=2 expandtab
@@ -159,7 +159,6 @@ if has ("autocmd")
   " Texts file
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
-    autocmd BufReadPre,FileReadPre      *.txt set lines=30
     autocmd BufReadPre,FileReadPre      *.txt set syntax=off
     autocmd BufReadPre,FileReadPre      *.txt set tabstop=2 shiftwidth=2 expandtab
     autocmd BufReadPre,FileReadPre      *.txt colorscheme slate
@@ -170,10 +169,7 @@ if has ("autocmd")
   " DEFAULT SETTING FOR FILES THAT ARE NOT GROUPED
 
   " Wrapping & column stuff
-  set columns=80
   set wrapmargin=8
-  set nowrap
-  set lines=22
 
   " Graphical settings
   colorscheme darkblue
@@ -183,8 +179,6 @@ if has ("autocmd")
   set shiftwidth=4
   set expandtab
   set spell spelllang=en_ca
-  "Set word count
 endif "if has
-
 
 "code folding = set foldenable
