@@ -29,8 +29,8 @@ set nowrap
 :let mapleader = ","
 
 " Make it easy to update/reload _vimrc
-:nmap <Leader>s :source _vimrc<CR>
-:nmap <Leader>v :e _vimrc<CR>
+:nmap <Leader>s :source $HOME/_vimrc<CR>
+:nmap <Leader>v :e $HOME/_vimrc<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
@@ -39,10 +39,10 @@ set nowrap
 :nmap <Leader><Tab> gt<CR>
 
 " Run ctags
-:nmap <Leader>] <Esc>:!ctags -R .<CR> 
+:nmap <Leader>] <Esc>:!ctags -R .<CR>
 
 " Get lines inserted
 :nmap <Leader>- <Esc>a-----<Esc>
 
-" Do word wrapping 
+" Do word wrapping
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
