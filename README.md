@@ -13,6 +13,7 @@ Personal .vimrc and content of .vim directory
 * statline
 * netrw
 * mswin (have modified it from what is in /usr/share/vim/vim73/mswin.vim)
+* numbers.vim
 
 ## Color theme
 * sunburn

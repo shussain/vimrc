@@ -70,8 +70,11 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
-" Remap for Tagar
+" Remap for Tagbar
 nmap  <F2>   :TagbarToggle<CR>
+
+" Toggle between absolute and relative numbering - using numbers.vim
+nnoremap <F3> :NumbersToggle<CR>
 
 " Key mapping for web searches
 function! Terms(prompt)
