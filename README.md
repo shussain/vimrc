@@ -11,9 +11,9 @@ Personal .vimrc and content of .vim directory
 * NERD tree
 * snipMate
 * statline
-* netrw
-* mswin (have modified it from what is in /usr/share/vim/vim73/mswin.vim)
+* rails
 * numbers.vim
+* mswin (have modified it from what is in /usr/share/vim/vim73/mswin.vim)
 
 ## Color theme
 * sunburn
