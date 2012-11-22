@@ -181,7 +181,7 @@ navigating unfamiliar applications.
 
 Alternate and Related Files ~
 						*rails-alternate-related*
-Two commands, :A and :R, are used quickly jump to an "alternate" and a
+Two commands, :A and :R, are used to quickly jump to an "alternate" and a
 "related" file, defined below.
 
 	*rails-:A* *rails-:AE* *rails-:AS* *rails-:AV* *rails-:AT* *rails-:AD*
@@ -669,13 +669,6 @@ This plugin provides a few additional key bindings if it is running under
 Cream, the user friendly editor which uses Vim as a back-end.  Ctrl+Enter
 finds the file under the cursor (as in |rails-gf|), and Alt+[ and Alt+] find
 the alternate (|rails-alternate|) and related (|rails-related|) files.
-
-						*rails-template-types*
-Commands like :Rview use a hardwired list of extensions (erb, rjs, etc.)
-when searching for files.  In order to facilitate working with non-standard
-template types, several popular extensions are featured in this list,
-including haml, liquid, and mab (markaby).  These extensions will disappear
-once a related configuration option is added to rails.vim.
 
 						*rails-rspec*
 The presence of a spec directory causes several additional behaviors to
