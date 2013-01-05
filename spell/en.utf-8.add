@@ -6,3 +6,6 @@ DNSSEC
 Xelerance
 DNS
 Django
+ldns
+Postgres
+PostgreSQL
