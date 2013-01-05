@@ -9,3 +9,7 @@ Django
 ldns
 Postgres
 PostgreSQL
+MQ
+RabbitMQ
+sudo
+Ubuntu
