@@ -35,6 +35,11 @@ set shell=/bin/zsh
 " No backup thanks to source control but might change this later
 set nobackup
 
+" Place a line at 80 columns to visibly mark the point where most code should
+" end or be wrapped
+set colorcolumn=80
+"highlight colorcolumn ctermbg=233
+
 
 " Set the global map leader variable so that:
 :let mapleader = ","
