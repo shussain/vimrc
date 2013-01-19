@@ -32,6 +32,10 @@ set visualbell
 
 set shell=/bin/zsh
 
+" No backup thanks to source control but might change this later
+set nobackup
+
+
 " Set the global map leader variable so that:
 :let mapleader = ","
 
@@ -85,7 +89,10 @@ function! Terms(prompt)
 endfunction
 map <leader>f :! /usr/bin/chromium-browser 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
 
-" Spelling changes. fix common typos and mistakes I make
+" Shortcut for entering information
+:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
+
+" Spelling changes. Fix common typos and mistakes I make
 abbreviate teh the
 abbreviate eg e.g.
 abbreviate etc etc.
@@ -95,13 +102,6 @@ abbreviate Philipinne Philippine
 abbreviate thier their
 abbreviate definately definitely
 abbreviate Credil CREDIL
-
-" No backup thanks to source control but might change this later
-set nobackup
-
-" Shortcut for entering information
-:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
-
 
 if has ("autocmd")
   " Enabled file type detection and file-type specific plugins.
