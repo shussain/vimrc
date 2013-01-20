@@ -64,7 +64,8 @@ set colorcolumn=80
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
 
 " Shortcut for having date in the format I prefer
-:nmap <Leader>date <Esc>!!date +%a, %b. %d, %Y<Esc>
+nmap <Leader>date a<C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR><Esc>
+imap <Leader>date <C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR>
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree /home/habibilus/dnsx-monitor/src
