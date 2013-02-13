@@ -63,6 +63,9 @@ set colorcolumn=80
 " Do word wrapping
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
 
+" Do vertical split
+:nmap <Leader>vs <Esc>:vsplit<CR>
+
 " Shortcut for having date in the format I prefer
 nmap <Leader>date a<C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR><Esc>
 imap <Leader>date <C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR>
