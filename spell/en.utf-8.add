@@ -13,3 +13,10 @@ MQ
 RabbitMQ
 sudo
 Ubuntu
+NSEC
+DNSKEY
+DS
+NSEC3
+RRSIG
+SOA
+MX
