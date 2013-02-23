@@ -1,5 +1,5 @@
 set nocompatible
-source /usr/share/vim/vim73/vimrc_example.vim
+source /usr/share/vim/vim73/macros/matchit.vim
 
 " Initial restarting
 "autocmd!
