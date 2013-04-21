@@ -10,6 +10,7 @@ Personal .vimrc and content of .vim directory
 * matchit
 * NERD commenter
 * NERD tree
+* ctrlp
 * snipMate
 * statline
 * rails

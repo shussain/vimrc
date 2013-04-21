@@ -101,6 +101,11 @@ map <leader>f :! /usr/bin/chromium-browser 'https://duckduckgo.com/?q=<c-r>=Term
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
+" ctrlp
+let g:ctrlp_map = ',p'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+
 " Spelling changes. Fix common typos and mistakes I make
 abbreviate teh the
 abbreviate eg e.g.
