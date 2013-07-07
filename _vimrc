@@ -71,7 +71,7 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR><Esc>
 imap <Leader>date <C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR>
 
 " NerdTree app
-:nmap <Leader>n <Esc>:NERDTree /home/habibilus/kiosos
+:nmap <Leader>n <Esc>:NERDTree ~/dnsx-monitor/src
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Silly shortcut for summing up entries in custom finance tracker
@@ -96,7 +96,7 @@ function! Terms(prompt)
     call inputrestore()
     return searchterm
 endfunction
-map <Leader>f :! /usr/bin/chromium-browser 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
+map <Leader>f :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
 
 " Running pylint (external program that will need to be installed seperately)
 nnoremap <Leader>l <Esc>:! pylint -E %<CR>
