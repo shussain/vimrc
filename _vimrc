@@ -71,7 +71,7 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR><Esc>
 imap <Leader>date <C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR>
 
 " NerdTree app
-:nmap <Leader>n <Esc>:NERDTree ~/dnsx-monitor/src
+:nmap <Leader>n <Esc>:NERDTree /home/habibilus/dnsx-monitor/src
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Silly shortcut for summing up entries in custom finance tracker
@@ -96,19 +96,10 @@ function! Terms(prompt)
     call inputrestore()
     return searchterm
 endfunction
-map <Leader>f :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
-
-" Running pylint (external program that will need to be installed seperately)
-nnoremap <Leader>l <Esc>:! pylint -E %<CR>
+map <leader>f :! /usr/bin/chromium-browser 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
 
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
-
-" ctrlp
-let g:ctrlp_map = ',p'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
 " Spelling changes. Fix common typos and mistakes I make
 abbreviate teh the
@@ -120,6 +111,32 @@ abbreviate Philipinne Philippine
 abbreviate thier their
 abbreviate definately definitely
 abbreviate Credil CREDIL
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Vundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'majutsushi/tagbar'
+Bundle 'edsono/vim-matchit'
+Bundle 'kien/ctrlp.vim'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'vim-scripts/a.vim'
+Bundle 'vim-scripts/snipMate'
+Bundle 'vim-scripts/statline'
+Bundle 'myusuf3/numbers.vim'
+
+filetype plugin indent on     " required!
 
 if has ("autocmd")
   " Enabled file type detection and file-type specific plugins.
