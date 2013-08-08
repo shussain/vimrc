@@ -107,6 +107,8 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
+nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
+
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
