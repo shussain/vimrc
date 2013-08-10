@@ -146,6 +146,7 @@ Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
 Bundle 'vim-scripts/statline'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'terryma/vim-multiple-cursors'
 
 filetype plugin indent on     " required!
 

@@ -9,6 +9,7 @@ Personal .vimrc and content of .vim directory
 * git gutter
 * tagbar
 * matchit
+* Multiple cursors
 * NERD commenter
 * NERD tree
 * ctrlp
