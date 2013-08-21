@@ -12,6 +12,9 @@ set number
 set ruler
 set encoding=utf-8
 
+" Keep cursor away from edges of screen.
+set so=14
+
 " Show the line number relative to the line with the cursor in front of each line
 set relativenumber
 
