@@ -6,6 +6,7 @@ Personal .vimrc and content of .vim directory
 * vundle
 * a.vim (http://www.vim.org/scripts/script.php?script_id=31)
 * fugitive
+* sppeddating
 * git gutter
 * tagbar
 * matchit
