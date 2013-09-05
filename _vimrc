@@ -74,7 +74,7 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR><Esc>
 imap <Leader>date <C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR>
 
 " NerdTree app
-:nmap <Leader>n <Esc>:NERDTree $HOME/dnsx-monitor/src
+:nmap <Leader>n <Esc>:NERDTree $HOME/project
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
 " Silly shortcut for summing up entries in custom finance tracker
