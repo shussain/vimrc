@@ -6,7 +6,7 @@ Personal .vimrc and content of .vim directory
 * vundle
 * a.vim (http://www.vim.org/scripts/script.php?script_id=31)
 * fugitive
-* sppeddating
+* speeddating
 * git gutter
 * tagbar
 * matchit
@@ -15,7 +15,7 @@ Personal .vimrc and content of .vim directory
 * NERD tree
 * ctrlp
 * snipMate
-* statline
+* vim-airline
 * rails
 * numbers.vim
 
