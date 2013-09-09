@@ -1,0 +1,4 @@
+*~
+*.pyc
+tags
+.vim/bundle/<project>/*
