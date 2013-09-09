@@ -112,6 +112,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
 nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 
+" For vim-arline, require statusline to appear
+set laststatus=2
+
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
