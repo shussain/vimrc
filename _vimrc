@@ -108,11 +108,12 @@ nnoremap <Leader>l <Esc>:! pylint -E %<CR>
 let g:ctrlp_map = ',p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_switch_buffer = 'O'
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
 nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 
-" For vim-arline, require statusline to appear
+" For vim-airline, require statusline to appear
 set laststatus=2
 
 " Shortcut for entering information
