@@ -123,12 +123,13 @@ set laststatus=2
 abbreviate teh the
 abbreviate eg e.g.
 abbreviate etc etc.
+abbreviate thier their
+abbreviate woudl would
+abbreviate definately definitely
+abbreviate Credil CREDIL
 abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
-abbreviate thier their
-abbreviate definately definitely
-abbreviate Credil CREDIL
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
