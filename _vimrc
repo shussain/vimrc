@@ -120,9 +120,9 @@ set laststatus=2
 :nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
 " Spelling changes. Fix common typos and mistakes I make
-abbreviate teh the
 abbreviate eg e.g.
 abbreviate etc etc.
+abbreviate teh the
 abbreviate thier their
 abbreviate woudl would
 abbreviate definately definitely
@@ -130,6 +130,7 @@ abbreviate Credil CREDIL
 abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
+
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -233,7 +234,7 @@ if has ("autocmd")
 
   " Graphical settings
   colorscheme darkblue
-  set nowrap columns=100 lines=30
+  set nowrap columns=80 lines=30
 
   set tabstop=4
   set shiftwidth=4
