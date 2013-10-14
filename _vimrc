@@ -51,6 +51,10 @@ set colorcolumn=80
 :nmap <Leader>s :source $HOME/_vimrc<CR>
 :nmap <Leader>v :e $HOME/_vimrc<CR>
 
+" Deal with going up and down with long line
+:nnoremap k gk
+:nnoremap j gj
+
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
 :nmap <Leader>t <Esc>:tabnew<CR>
