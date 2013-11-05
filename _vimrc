@@ -1,5 +1,4 @@
 set nocompatible
-source /usr/share/vim/vim73/macros/matchit.vim
 
 " Initial restarting
 "autocmd!
@@ -74,8 +73,8 @@ set colorcolumn=80
 :nmap <Leader>vs <Esc>:vsplit<CR>
 
 " Shortcut for having date in the format I prefer
-nmap <Leader>date a<C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR><Esc>
-imap <Leader>date <C-R>=strftime("%A, %B %d, %T %Z, %Y")<CR>
+nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
+imap <Leader>date <C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR>
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
