@@ -90,10 +90,10 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
 " Remap for Tagbar
-nmap  <F2>   :TagbarToggle<CR>
+nmap  <F3>   :TagbarToggle<CR>
 
 " Toggle between absolute and relative numbering - using numbers.vim
-nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F2> :NumbersToggle<CR>
 
 " Key mapping for web searches
 function! Terms(prompt)
