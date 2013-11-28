@@ -95,6 +95,9 @@ nmap  <F3>   :TagbarToggle<CR>
 " Toggle between absolute and relative numbering - using numbers.vim
 nnoremap <F2> :NumbersToggle<CR>
 
+" Map quicfix
+:map <Leader>g :cw<CR>
+
 " Key mapping for web searches
 function! Terms(prompt)
     call inputsave()
