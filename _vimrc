@@ -165,6 +165,9 @@ Bundle 'bling/vim-airline'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'terryma/vim-multiple-cursors'
 
+" When encrypting any file, use the much stronger blowfish algorithm
+set cryptmethod=blowfish
+
 filetype plugin indent on     " required!
 
 if has ("autocmd")
