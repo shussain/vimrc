@@ -54,6 +54,9 @@ set colorcolumn=80
 :nnoremap k gk
 :nnoremap j gj
 
+" Remap semicolon to map (for Ex comands) since semicolon is important
+nnoremap ; :
+
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
 :nmap <Leader>t <Esc>:tabnew<CR>
