@@ -80,8 +80,9 @@ imap <Leader>date <C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR>
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
-" Silly shortcut for summing up entries in custom finance tracker
-:nmap <Leader>math <Esc>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR>
+" Silly shortcut for summing up entries in custom finance tracker. Highlight
+" the financial item and copy it (using CTRL-V)
+:nmap <Leader>math <Esc>:tabnew<CR><C-v><ESC>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR><ESC>gg<ESC>yy<ESC>:!python -c "print <C-r>""<CR>
 
 " Word count
 :map <Leader>c g<C-G>
