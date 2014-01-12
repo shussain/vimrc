@@ -54,7 +54,8 @@ set colorcolumn=80
 :nnoremap k gk
 :nnoremap j gj
 
-" Remap semicolon to map (for Ex comands) since semicolon is important
+" Remap semicolon to map (for Ex commands) since colon is important
+" NOTE TO SELF: ; is used to repeat last motion so it may be useful
 nnoremap ; :
 
 " Have the tabbed editing work with internet browser type functionality
