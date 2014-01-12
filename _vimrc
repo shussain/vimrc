@@ -166,13 +166,13 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
 Bundle 'bling/vim-airline'
-"Bundle 'vim-scripts/statline'
-Bundle 'itchyny/calendar.vim'
+"Bundle 'itchyny/calendar.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'terryma/vim-multiple-cursors'
 
-let g:calendar_google_calendar = 1
-let g:calendar_google_task = 1
+" Calendar.vim -> using Google calendar and tasks
+"let g:calendar_google_calendar = 1
+"let g:calendar_google_task = 1
 
 " When encrypting any file, use the much stronger blowfish algorithm
 set cryptmethod=blowfish
