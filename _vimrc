@@ -57,7 +57,8 @@ set colorcolumn=80
 :nnoremap k gk
 :nnoremap j gj
 
-" Remap semicolon to map (for Ex comands) since semicolon is important
+" Remap semicolon to map (for Ex commands) since colon is important
+" NOTE TO SELF: ; is used to repeat last motion so it may be useful
 nnoremap ; :
 
 " Have the tabbed editing work with internet browser type functionality
@@ -168,9 +169,13 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
 Bundle 'bling/vim-airline'
-"Bundle 'vim-scripts/statline'
+"Bundle 'itchyny/calendar.vim'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'terryma/vim-multiple-cursors'
+
+" Calendar.vim -> using Google calendar and tasks
+"let g:calendar_google_calendar = 1
+"let g:calendar_google_task = 1
 
 " When encrypting any file, use the much stronger blowfish algorithm
 set cryptmethod=blowfish
