@@ -28,6 +28,9 @@ set complete=.,b,u,t
 set ignorecase
 set smartcase
 
+" highlight all search matches
+set hlsearch
+
 " Set visual bell  instead of beep
 " Good when not wearing earphone at work
 set visualbell
