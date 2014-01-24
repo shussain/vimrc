@@ -6,21 +6,19 @@ Personal .vimrc and content of .vim directory
 * vundle
 * a.vim (http://www.vim.org/scripts/script.php?script_id=31)
 * fugitive
+* vim-rails
 * speeddating
-* git gutter
-* tagbar
-* matchit
-* Multiple cursors
 * NERD commenter
 * NERD tree
+* tagbar
+* matchit
 * ctrlp
+* a.vim
 * snipMate
 * vim-airline
-* rails
+* git gutter
 * numbers.vim
-
-## Modified default vim scripts
-* mswin (have modified it from what is in /usr/share/vim/vim73/mswin.vim)
+* Multiple cursors
 
 ## Color theme
 * sunburn
