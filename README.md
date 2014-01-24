@@ -15,7 +15,8 @@ Personal .vimrc and content of .vim directory
 * ctrlp
 * a.vim
 * snipMate
-* vim-airline
+* drag visual
+* airline
 * git gutter
 * numbers.vim
 * Multiple cursors
