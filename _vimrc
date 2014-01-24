@@ -130,6 +130,14 @@ nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 " For vim-airline, require statusline to appear
 set laststatus=2
 
+" drag visual configuration
+"runtime plugin/dragvisuals.vim
+"vmap <expr> <LEFT> DVB_Drag('left')
+"vmap <expr> <RIGHT> DVB_Drag('right')
+"vmap <expr> <DOWN> DVB_Drag('down')
+"vmap <expr> <UP> DVB_Drag('up')
+"vmap <expr> D DVB_Duplicate()
+
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
 
@@ -170,7 +178,7 @@ Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
 "Bundle 'vim-scripts/vis'
 "Bundle 'itchyny/calendar.vim'
-"Bundle 'atweiden/vim-dragvisuals'
+Bundle 'atweiden/vim-dragvisuals'
 Bundle 'bling/vim-airline'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'terryma/vim-multiple-cursors'
