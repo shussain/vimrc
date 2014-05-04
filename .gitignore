@@ -9,6 +9,7 @@ tags
 .vim/bundle/snipMate/*
 .vim/bundle/tagbar/*
 .vim/bundle/vim-airline/*
+.vim/bundle/vim-dragvisuals/*
 .vim/bundle/vim-fugitive/*
 .vim/bundle/vim-gitgutter/*
 .vim/bundle/vim-matchit/*
