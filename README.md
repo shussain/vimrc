@@ -2,24 +2,11 @@
 
 Personal .vimrc and content of .vim directory
 
-## Plugin [vundle managed]
-* vundle
-* a.vim (http://www.vim.org/scripts/script.php?script_id=31)
-* fugitive
-* vim-rails
-* speeddating
-* NERD commenter
-* NERD tree
-* tagbar
-* matchit
-* ctrlp
-* a.vim
-* snipMate
-* drag visual
-* airline
-* git gutter
-* numbers.vim
-* Multiple cursors
+## Plugins
+Managed via Vundle. Do the following:
+* Source the vimrc config file
+* In Vim, enter: BundleInstall
+* To update plugins, enter: BundleUpdate
 
 ## Color theme
 * sunburn

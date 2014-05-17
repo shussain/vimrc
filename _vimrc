@@ -97,11 +97,14 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
+" Toggle between absolute and relative numbering - using numbers.vim
+nnoremap <F2> :NumbersToggle<CR>
+
 " Remap for Tagbar
 nmap  <F3>   :TagbarToggle<CR>
 
-" Toggle between absolute and relative numbering - using numbers.vim
-nnoremap <F2> :NumbersToggle<CR>
+" Remap for Gundo
+nmap  <F5>   :GundoToggle<CR>
 
 " Map quicfix
 :map <Leader>g :cw<CR>
@@ -178,6 +181,7 @@ Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
 "Bundle 'vim-scripts/vis'
 "Bundle 'itchyny/calendar.vim'
+Bundle 'sjl/gundo.vim'
 Bundle 'atweiden/vim-dragvisuals'
 Bundle 'bling/vim-airline'
 Bundle 'myusuf3/numbers.vim'
