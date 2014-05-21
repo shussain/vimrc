@@ -269,7 +269,7 @@ if has ("autocmd")
 
   " Graphical settings
   colorscheme darkblue
-  set nowrap columns=80 lines=30
+  set nowrap "columns=80 lines=30
 
   set tabstop=4
   set shiftwidth=4
