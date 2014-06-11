@@ -257,7 +257,7 @@ if has ("autocmd")
   set wrapmargin=8
 
   " Graphical settings
-  colorscheme elflord
+  colorscheme zenburn
 
   set nowrap "columns=80 lines=30
 
