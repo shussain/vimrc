@@ -209,7 +209,6 @@ if has ("autocmd")
   augroup java
     autocmd BufReadPre,FileReadPre      *.java set nowrap
     autocmd BufReadPre,FileReadPre      *.java set syntax=on
-    autocmd BufReadPre,FileReadPre      *.java colorscheme murphy
   augroup END
 
   " Python
@@ -217,31 +216,24 @@ if has ("autocmd")
     autocmd BufReadPre,FileReadPre      *.py set nowrap
     autocmd BufReadPre,FileReadPre      *.py set syntax=on
     autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
-    autocmd BufReadPre,FileReadPre      *.py set tabstop=4 shiftwidth=4 expandtab
     autocmd BufReadPre,FileReadPre      *.py set softtabstop=4 autoindent
-    autocmd BufReadPre,FileReadPre      *.py set relativenumber
     autocmd BufReadPre,FileReadPre      *.py set background=dark
-    autocmd BufReadPre,FileReadPre      *.py colorscheme solarized
   augroup END
 
   augroup ruby
     autocmd BufReadPre,FileReadPre      *.rb set nowrap
     autocmd BufReadPre,FileReadPre      *.rb set syntax=on
-    autocmd BufReadPre,FileReadPre      *.rb set tabstop=2 shiftwidth=2 bs=2 expandtab
     autocmd BufReadPre,FileReadPre      *.rb set smarttab autowrite
-    autocmd BufReadPre,FileReadPre      *.rb colorscheme evening
   augroup END
 
   augroup cs
     autocmd BufReadPre,FileReadPre      *.cs set nowrap
     autocmd BufReadPre,FileReadPre      *.cs set syntax=on
-    autocmd BufReadPre,FileReadPre      *.cs colorscheme murphy
   augroup END
 
   augroup aspx
     autocmd BufReadPre,FileReadPre      *.aspx set nowrap
     autocmd BufReadPre,FileReadPre      *.aspx set syntax=aspvbs
-    autocmd BufReadPre,FileReadPre      *.aspx colorscheme zenburn
   augroup END
 
   " Properties file
@@ -249,16 +241,12 @@ if has ("autocmd")
     autocmd BufReadPre,FileReadPre      *.properties set nowrap
     autocmd BufReadPre,FileReadPre      *.properties set syntax=off
     autocmd BufReadPre,FileReadPre      *.properties set syntax=off
-    autocmd BufReadPre,FileReadPre      *.proeprties set tabstop=2 shiftwidth=2 expandtab
-    autocmd BufReadPre,FileReadPre      *.properties colorscheme pablo
   augroup END
 
   " Texts file
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
     autocmd BufReadPre,FileReadPre      *.txt set syntax=off
-    autocmd BufReadPre,FileReadPre      *.txt set tabstop=2 shiftwidth=2 expandtab
-    autocmd BufReadPre,FileReadPre      *.txt colorscheme slate
     autocmd BufReadPre,FileReadPre      *.txt set spell spelllang=en_ca
   augroup END
 
@@ -269,7 +257,8 @@ if has ("autocmd")
   set wrapmargin=8
 
   " Graphical settings
-  colorscheme darkblue
+  colorscheme elflord
+
   set nowrap "columns=80 lines=30
 
   set tabstop=4
