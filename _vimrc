@@ -142,7 +142,7 @@ vmap <expr> k DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
 
 " Shortcut for entering information
-:nmap <Leader>sam <Esc>aSamir Hussain<CR>CREDIL<Esc>
+:nmap <Leader>sam <Esc>aSincerely, <CR><CR>Samir Hussain<Esc>
 
 " Spelling changes. Fix common typos and mistakes I make
 abbreviate eg e.g.
@@ -169,7 +169,6 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 "Bundle 'itchyny/calendar.vim'
-"Bundle 'vim-scripts/vis'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'atweiden/vim-dragvisuals'
 Bundle 'bling/vim-airline'
