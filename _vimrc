@@ -165,8 +165,6 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-" Vundles here:
-"
 " original repos on github
 "Bundle 'itchyny/calendar.vim'
 Bundle 'airblade/vim-gitgutter'
