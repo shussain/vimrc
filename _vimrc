@@ -184,6 +184,17 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-speeddating'
 Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
+Bundle 'scrooloose/syntastic'
+
+" Syntastic configuration
+set statusline+=%#errormsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_quiet_messages = { "level": "warnings" }
 
 " Calendar.vim -> using Google calendar and tasks
 "let g:calendar_google_calendar = 1
