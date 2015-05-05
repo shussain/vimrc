@@ -118,8 +118,9 @@ function! Terms(prompt)
 endfunction
 map <leader>f :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
 
-" Running pylint (external program that will need to be installed seperately)
-nnoremap <Leader>l <Esc>:! pylint -E %<CR>
+" Loading important files
+nnoremap <Leader>l <Esc>:e ~/Desktop/finances.txt<CR>
+nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt<CR>
 
 " ctrlp
 let g:ctrlp_map = ',p'
