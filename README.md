@@ -8,6 +8,8 @@ Managed via Vundle. Do the following:
 * In Vim, enter: BundleInstall
 * To update plugins, enter: BundleUpdate
 
-## Color theme
+## Colour theme
 * sunburn
 * zenburn
+* vividchalk
+
