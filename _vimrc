@@ -28,6 +28,9 @@ set complete=.,b,u,t
 set ignorecase
 set smartcase
 
+" show the first match for the pattern, while typing it
+set incsearch
+
 " highlight all search matches
 set hlsearch
 
