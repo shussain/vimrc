@@ -190,6 +190,8 @@ Bundle 'vim-scripts/a.vim'
 Bundle 'vim-scripts/snipMate'
 Bundle 'scrooloose/syntastic'
 
+Bundle 'nanotech/jellybeans.vim'   " colorscheme
+
 " Syntastic configuration
 set statusline+=%#errormsg#
 set statusline+=%{SyntasticStatuslineFlag()}
