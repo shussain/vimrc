@@ -119,10 +119,10 @@ function! Terms(prompt)
     call inputrestore()
     return searchterm
 endfunction
-map <leader>f :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
+map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
 
 " Loading important files
-nnoremap <Leader>l <Esc>:e ~/Desktop/finances.txt<CR>
+nnoremap <Leader>f <Esc>:e ~/Desktop/finances.txt<CR>
 nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt<CR>
 
 " ctrlp
