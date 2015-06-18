@@ -52,6 +52,14 @@ set colorcolumn=80
 " Set the global map leader variable so that:
 :let mapleader = ","
 
+" Remap semicolon to map (for Ex commands) since colon is important
+" NOTE TO SELF: ; is used to repeat last motion so it may be useful
+nnoremap ; :
+
+" Remap Caps lock to be escape
+"au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+"au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
 " Make it easy to update/reload _vimrc
 :nmap <Leader>s :source $HOME/_vimrc<CR>
 :nmap <Leader>v :e $HOME/_vimrc<CR>
@@ -59,10 +67,6 @@ set colorcolumn=80
 " Deal with going up and down with long line
 :nnoremap k gk
 :nnoremap j gj
-
-" Remap semicolon to map (for Ex commands) since colon is important
-" NOTE TO SELF: ; is used to repeat last motion so it may be useful
-nnoremap ; :
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
