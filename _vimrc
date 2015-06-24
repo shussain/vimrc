@@ -48,6 +48,9 @@ set nobackup
 set colorcolumn=80
 "highlight colorcolumn ctermbg=233
 
+" Set paste (for copy-paste). In terminal, it works. In GUI,
+" it automatically gets disabled
+set paste
 
 " Set the global map leader variable so that:
 :let mapleader = ","
