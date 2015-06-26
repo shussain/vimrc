@@ -19,6 +19,10 @@ set spell spelllang=en_ca
 " No backup thanks to source control but might change this later
 set nobackup
 
+" Set paste (for copy-paste). In terminal, it works. In GUI,
+" it automatically gets disabled
+set paste
+
 " Configs for making Python development easy
 "set syntax=on
 set smarttab autowrite
