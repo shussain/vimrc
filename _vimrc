@@ -230,13 +230,11 @@ if has ("autocmd")
   " Java code.
   augroup java
     autocmd BufReadPre,FileReadPre      *.java set nowrap
-    autocmd BufReadPre,FileReadPre      *.java set syntax=on
   augroup END
 
   " Python
   augroup py
     autocmd BufReadPre,FileReadPre      *.py set nowrap
-    autocmd BufReadPre,FileReadPre      *.py set syntax=on
     autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
     autocmd BufReadPre,FileReadPre      *.py set softtabstop=4 autoindent
     autocmd BufReadPre,FileReadPre      *.py set background=dark
@@ -244,25 +242,20 @@ if has ("autocmd")
 
   augroup ruby
     autocmd BufReadPre,FileReadPre      *.rb set nowrap
-    autocmd BufReadPre,FileReadPre      *.rb set syntax=on
     autocmd BufReadPre,FileReadPre      *.rb set smarttab autowrite
   augroup END
 
   augroup cs
     autocmd BufReadPre,FileReadPre      *.cs set nowrap
-    autocmd BufReadPre,FileReadPre      *.cs set syntax=on
   augroup END
 
   augroup aspx
     autocmd BufReadPre,FileReadPre      *.aspx set nowrap
-    autocmd BufReadPre,FileReadPre      *.aspx set syntax=aspvbs
   augroup END
 
   " Properties file
   augroup properties
     autocmd BufReadPre,FileReadPre      *.properties set nowrap
-    autocmd BufReadPre,FileReadPre      *.properties set syntax=off
-    autocmd BufReadPre,FileReadPre      *.properties set syntax=off
   augroup END
 
   " Texts file
