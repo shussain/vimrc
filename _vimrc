@@ -116,6 +116,9 @@ nmap  <F3>   :TagbarToggle<CR>
 " Remap for Gundo
 nmap  <F5>   :GundoToggle<CR>
 
+" Running make
+:map <Leader>m :make<CR>:copen<CR>
+
 " Map quicfix
 :map <Leader>g :cw<CR>
 
