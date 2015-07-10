@@ -20,7 +20,7 @@ set relativenumber
 " Autocomplete for file entry
 set wim=list:longest,full
 
-" Autocomplete for Ctrl-N and Ctrol-P. We are looking at open/hidden buffers
+" Autocomplete for Ctrl-N and Ctrl-P. We are looking at open/hidden buffers
 " and tags
 set complete=.,b,u,t
 
