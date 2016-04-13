@@ -114,7 +114,10 @@ nnoremap <F2> :NumbersToggle<CR>
 nmap  <F3>   :TagbarToggle<CR>
 
 " Remap for Gundo
-nmap  <F5>   :GundoToggle<CR>
+nmap  <F4>   :GundoToggle<CR>
+
+" Renmap for vim-latex-live-preview
+nmap  <F5>   <Esc>:LLPStartPreview<CR>
 
 " Running make
 :map <Leader>m :make<CR>:copen<CR>
@@ -188,6 +191,7 @@ Bundle 'edsono/vim-matchit'
 Bundle 'godlygeek/tabular'
 Bundle 'kien/ctrlp.vim'
 Bundle 'majutsushi/tagbar'
+Bundle 'xuhdev/vim-latex-live-preview'
 Bundle 'mhinz/vim-startify'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'scrooloose/nerdcommenter'
