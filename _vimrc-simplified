@@ -1,4 +1,4 @@
-" Simplified vimrc for use when vim is installed but not gvim
+" Simplified vimrc for use when using an older instance of vim
 
 set number
 set encoding=utf-8
@@ -10,7 +10,7 @@ set showcmd
 set ignorecase
 set smartcase
 
-" Spelling changes. fix common typos and mistakes I make
+" Spelling changes. Fix common typos and mistakes I make
 abbreviate teh the
 abbreviate eg e.g.
 

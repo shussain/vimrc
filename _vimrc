@@ -116,7 +116,7 @@ nmap  <F3>   :TagbarToggle<CR>
 " Remap for Gundo
 nmap  <F4>   :GundoToggle<CR>
 
-" Renmap for vim-latex-live-preview
+" Remap for vim-latex-live-preview
 nmap  <F5>   <Esc>:LLPStartPreview<CR>
 
 " Running make
@@ -138,7 +138,7 @@ map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDu
 nnoremap <Leader>f <Esc>:e ~/Desktop/finances.txt<CR>
 nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt<CR>
 
-" ctrlp
+" ctrl-p
 let g:ctrlp_map = ',p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
