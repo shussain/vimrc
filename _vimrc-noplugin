@@ -1,10 +1,10 @@
 " Simplified vimrc for use when using an older instance of vim or
 " where there are no vim plugins
 
+set nocompatible
+
 " Initial restarting
 "autocmd!
-
-set nocompatible
 
 set showmode
 set showcmd
