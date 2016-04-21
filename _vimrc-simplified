@@ -1,20 +1,47 @@
-" Simplified vimrc for use when using an older instance of vim
+" Simplified vimrc for use when using an older instance of vim or
+" where there are no vim plugins
 
-set number
-set encoding=utf-8
+" Initial restarting
+"autocmd!
+
+set nocompatible
 
 set showmode
 set showcmd
+
+" Formatting
+set number
+set ruler
+set encoding=utf-8
+
+" Keep cursor away from edges of screen.
+set so=5
+
+set shell=/bin/zsh
+
+" Autocomplete for file entry
+set wim=list:longest,full
+
+" Autocomplete for Ctrl-N and Ctrl-P. We are looking at open/hidden buffers
+" and tags
+set complete=.,b,u,t
+
+" Show the line number relative to the line with the cursor in front of each line
+set relativenumber
 
 " Ignore cases for searching
 set ignorecase
 set smartcase
 
-" Spelling changes. Fix common typos and mistakes I make
-abbreviate teh the
-abbreviate eg e.g.
+" show the first match for the pattern, while typing it
+set incsearch
 
-set spell spelllang=en_ca
+" highlight all search matches
+set hlsearch
+
+" Set visual bell instead of beep
+" Good when not wearing earphone at work
+set visualbell
 
 " No backup thanks to source control but might change this later
 set nobackup
@@ -23,18 +50,63 @@ set nobackup
 " it automatically gets disabled
 set paste
 
-" Configs for making Python development easy
-"set syntax=on
-set smarttab autowrite
-set tabstop=4 shiftwidth=4 expandtab
-set nowrap
+" When encrypting any file, use the much stronger blowfish algorithm
+set cryptmethod=blowfish
+
+set spell spelllang=en_ca
+
+" Place a line at 80 columns to visibly mark the point where most code should
+" end or be wrapped
+set colorcolumn=80
+"highlight colorcolumn ctermbg=233
+
+" Remap Caps lock to be escape
+"au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+"au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
+" Deal with going up and down with long line
+:nnoremap k gk
+:nnoremap j gj
+
+" Spelling changes. Fix common typos and mistakes I make
+abbreviate eg e.g.
+abbreviate etc etc.
+abbreviate teh the
+abbreviate thier their
+abbreviate woudl would
+abbreviate definately definitely
+abbreviate Credil CREDIL
+abbreviate Phillipinne Philippine
+abbreviate Phillipine Philippine
+abbreviate Philipinne Philippine
 
 "set the global map leader variable so that:
 :let mapleader = ","
 
+" Remap semicolon to map (for Ex commands) since colon is important
+" NOTE TO SELF: ; is used to repeat last motion so it may be useful
+nnoremap ; :
+
 " Make it easy to update/reload _vimrc
 :nmap <Leader>s :source $HOME/_vimrc<CR>
 :nmap <Leader>v :e $HOME/_vimrc<CR>
+
+" Have the tabbed editing work with internet browser type functionality
+" You just use comma instead of CTRL
+:nmap <Leader>t <Esc>:tabnew<CR>
+:nmap <Leader>w <Esc>:tabclose<CR>
+:nmap <Leader><Tab> gt<CR>
+
+" Shortcut for entering information
+:nmap <Leader>sam <Esc>aSincerely, <CR><CR>Samir Hussain<Esc>
+
+" Make it easy to update/reload _vimrc
+:nmap <Leader>s :source $HOME/_vimrc<CR>
+:nmap <Leader>v :e $HOME/_vimrc<CR>
+
+" Loading important files
+nnoremap <Leader>f <Esc>:e ~/Desktop/finances.txt<CR>
+nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
@@ -50,3 +122,28 @@ set nowrap
 
 " Do word wrapping
 :nmap <Leader>e <Esc>:set wrap linebreak<CR>
+
+" Do vertical split
+:nmap <Leader>vs <Esc>:vsplit<CR>
+
+" Shortcut for having date in the format I prefer
+nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
+imap <Leader>date <C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR>
+
+" Silly shortcut for summing up entries in custom finance tracker. Highlight
+" the financial item and copy it (using CTRL-V)
+:nmap <Leader>math <Esc>:tabnew<CR>p<ESC>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/
+
+" Word count
+:map <Leader>c g<C-G>
+
+" Save a file you edited in vim/vi without the needed permissions
+:map <Leader>save <Esc>:w !sudo tee %<CR>
+
+" Running make
+:map <Leader>m :make<CR>:copen<CR>
+
+" Map quickfix (mostly for make)
+:map <Leader>g :cw<CR>
+
+"code folding = set foldenable

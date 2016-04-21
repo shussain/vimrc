@@ -1,111 +1,11 @@
-set nocompatible
+" vimrc for when all plugins are installed
 
-" Initial restarting
-"autocmd!
 
-set showmode
-set showcmd
-
-" Formatting
-set number
-set ruler
-set encoding=utf-8
-
-" Keep cursor away from edges of screen.
-set so=5
-
-" Show the line number relative to the line with the cursor in front of each line
-set relativenumber
-
-" Autocomplete for file entry
-set wim=list:longest,full
-
-" Autocomplete for Ctrl-N and Ctrl-P. We are looking at open/hidden buffers
-" and tags
-set complete=.,b,u,t
-
-" Ignore cases for searching
-set ignorecase
-set smartcase
-
-" show the first match for the pattern, while typing it
-set incsearch
-
-" highlight all search matches
-set hlsearch
-
-" Set visual bell  instead of beep
-" Good when not wearing earphone at work
-set visualbell
-
-set shell=/bin/zsh
-
-" No backup thanks to source control but might change this later
-set nobackup
-
-" Place a line at 80 columns to visibly mark the point where most code should
-" end or be wrapped
-set colorcolumn=80
-"highlight colorcolumn ctermbg=233
-
-" Set paste (for copy-paste). In terminal, it works. In GUI,
-" it automatically gets disabled
-set paste
-
-" Set the global map leader variable so that:
-:let mapleader = ","
-
-" Remap semicolon to map (for Ex commands) since colon is important
-" NOTE TO SELF: ; is used to repeat last motion so it may be useful
-nnoremap ; :
-
-" Remap Caps lock to be escape
-"au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-"au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
-
-" Make it easy to update/reload _vimrc
-:nmap <Leader>s :source $HOME/_vimrc<CR>
-:nmap <Leader>v :e $HOME/_vimrc<CR>
-
-" Deal with going up and down with long line
-:nnoremap k gk
-:nnoremap j gj
-
-" Have the tabbed editing work with internet browser type functionality
-" You just use comma instead of CTRL
-:nmap <Leader>t <Esc>:tabnew<CR>
-:nmap <Leader>w <Esc>:tabclose<CR>
-:nmap <Leader><Tab> gt<CR>
-
-" Run ctags
-:nmap <Leader>] <Esc>:!ctags -R .<CR>
-
-" Get lines inserted
-:nmap <Leader>- <Esc>a-----<Esc>
-
-" Do word wrapping
-:nmap <Leader>e <Esc>:set wrap linebreak<CR>
-
-" Do vertical split
-:nmap <Leader>vs <Esc>:vsplit<CR>
-
-" Shortcut for having date in the format I prefer
-nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
-imap <Leader>date <C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR>
+source ~/_vimrc-simplified
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
-
-" Silly shortcut for summing up entries in custom finance tracker. Highlight
-" the financial item and copy it (using CTRL-V)
-:nmap <Leader>math <Esc>:tabnew<CR>p<ESC>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR><ESC>gg<ESC>yy<ESC>:!python -c "print <C-r>""<CR>
-
-" Word count
-:map <Leader>c g<C-G>
-
-" Save a file you edited in vim/vi without the needed permissions
-:map <Leader>save <Esc>:w !sudo tee %<CR>
 
 " Toggle between absolute and relative numbering - using numbers.vim
 nnoremap <F2> :NumbersToggle<CR>
@@ -119,12 +19,6 @@ nmap  <F4>   :GundoToggle<CR>
 " Remap for vim-latex-live-preview
 nmap  <F5>   <Esc>:LLPStartPreview<CR>
 
-" Running make
-:map <Leader>m :make<CR>:copen<CR>
-
-" Map quicfix
-:map <Leader>g :cw<CR>
-
 " Key mapping for web searches
 function! Terms(prompt)
     call inputsave()
@@ -133,10 +27,6 @@ function! Terms(prompt)
     return searchterm
 endfunction
 map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
-
-" Loading important files
-nnoremap <Leader>f <Esc>:e ~/Desktop/finances.txt<CR>
-nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt<CR>
 
 " ctrl-p
 let g:ctrlp_map = ',p'
@@ -157,21 +47,6 @@ vmap <expr> l DVB_Drag('right')
 vmap <expr> j DVB_Drag('down')
 vmap <expr> k DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
-
-" Shortcut for entering information
-:nmap <Leader>sam <Esc>aSincerely, <CR><CR>Samir Hussain<Esc>
-
-" Spelling changes. Fix common typos and mistakes I make
-abbreviate eg e.g.
-abbreviate etc etc.
-abbreviate teh the
-abbreviate thier their
-abbreviate woudl would
-abbreviate definately definitely
-abbreviate Credil CREDIL
-abbreviate Phillipinne Philippine
-abbreviate Phillipine Philippine
-abbreviate Philipinne Philippine
 
 filetype off                   " required!
 
@@ -221,9 +96,6 @@ let g:syntastic_quiet_messages = { "level": "warnings" }
 " Calendar.vim -> using Google calendar and tasks
 "let g:calendar_google_calendar = 1
 "let g:calendar_google_task = 1
-
-" When encrypting any file, use the much stronger blowfish algorithm
-set cryptmethod=blowfish
 
 filetype plugin indent on     " required!
 
@@ -289,5 +161,3 @@ if has ("autocmd")
   set expandtab
   set spell spelllang=en_ca
 endif "if has
-
-"code folding = set foldenable
