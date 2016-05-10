@@ -146,4 +146,7 @@ imap <Leader>date <C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR>
 " Map quickfix (mostly for make)
 :map <Leader>g :cw<CR>
 
+" Remap in order to make copy/paste easier
+nmap  <F6>   <Esc>:set nonumber\|set norelativenumber<CR>
+
 "code folding = set foldenable
