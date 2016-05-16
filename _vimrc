@@ -81,6 +81,7 @@ Plugin 'scrooloose/syntastic'
 
 " Colorscheme
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'romainl/Apprentice'
 
 " Syntastic configuration
 set statusline+=%#errormsg#
@@ -151,7 +152,7 @@ if has ("autocmd")
   set wrapmargin=8
 
   " Graphical settings
-  colorscheme zenburn
+  colorscheme apprentice
 
   set nowrap "columns=80 lines=30
 
