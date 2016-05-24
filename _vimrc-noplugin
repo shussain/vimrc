@@ -141,6 +141,7 @@ imap <Leader>date <C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR>
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
 " Running make
+" :set makeprg=gmake\ \CC=gcc296
 :map <Leader>m :make<CR>:copen<CR>
 
 " Map quickfix (mostly for make)
