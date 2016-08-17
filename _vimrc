@@ -18,15 +18,6 @@ nmap  <F4>   :GundoToggle<CR>
 " Remap for vim-latex-live-preview
 nmap  <F5>   <Esc>:LLPStartPreview<CR>
 
-" Key mapping for web searches
-function! Terms(prompt)
-    call inputsave()
-    let searchterm = input(a:prompt . ': ')
-    call inputrestore()
-    return searchterm
-endfunction
-map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
-
 " ctrl-p
 let g:ctrlp_map = ',p'
 let g:ctrlp_cmd = 'CtrlP'
@@ -100,64 +91,8 @@ let g:syntastic_quiet_messages = { "level": "warnings" }
 filetype plugin indent on     " required!
 
 if has ("autocmd")
-  " Enabled file type detection and file-type specific plugins.
-  " filetype plugin on indent
-  filetype plugin on
-
-  " Automatically remove all trailing whitespace before saving
-  autocmd BufWritePre * :%s/\s\+$//e
-
-  " Java code.
-  augroup java
-    autocmd BufReadPre,FileReadPre      *.java set nowrap
-  augroup END
-
-  " Python
-  augroup py
-    autocmd BufReadPre,FileReadPre      *.py set nowrap
-    autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
-    autocmd BufReadPre,FileReadPre      *.py set softtabstop=4 autoindent
-    autocmd BufReadPre,FileReadPre      *.py set background=dark
-  augroup END
-
-  augroup ruby
-    autocmd BufReadPre,FileReadPre      *.rb set nowrap
-    autocmd BufReadPre,FileReadPre      *.rb set smarttab autowrite
-  augroup END
-
-  augroup cs
-    autocmd BufReadPre,FileReadPre      *.cs set nowrap
-  augroup END
-
-  augroup aspx
-    autocmd BufReadPre,FileReadPre      *.aspx set nowrap
-  augroup END
-
-  " Properties file
-  augroup properties
-    autocmd BufReadPre,FileReadPre      *.properties set nowrap
-  augroup END
-
-  " Texts file
-  augroup mytext
-    autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
-    autocmd BufReadPre,FileReadPre      *.txt set syntax=off
-    autocmd BufReadPre,FileReadPre      *.txt set spell spelllang=en_ca
-  augroup END
-
-
-  " DEFAULT SETTING FOR FILES THAT ARE NOT GROUPED
-
-  " Wrapping & column stuff
-  set wrapmargin=8
 
   " Graphical settings
   colorscheme apprentice
 
-  set nowrap "columns=80 lines=30
-
-  set tabstop=4
-  set shiftwidth=4
-  set expandtab
-  set spell spelllang=en_ca
 endif "if has
