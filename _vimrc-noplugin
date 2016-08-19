@@ -51,7 +51,9 @@ set nobackup
 set paste
 
 " When encrypting any file, use the much stronger blowfish algorithm
-set cryptmethod=blowfish
+if has("cryptmethod")
+    set cryptmethod=blowfish
+endif
 
 set spell spelllang=en_ca
 
