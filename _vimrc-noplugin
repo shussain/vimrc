@@ -207,7 +207,7 @@ if has ("autocmd")
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
     autocmd BufReadPre,FileReadPre      *.txt set syntax=off
-    autocmd BufReadPre,FileReadPre      *.txt set spell spelllang=en_ca
+    autocmd BufReadPre,FileReadPre      *.txt set spell
   augroup END
 
 
@@ -221,7 +221,6 @@ if has ("autocmd")
   set tabstop=4
   set shiftwidth=4
   set expandtab
-  set spell spelllang=en_ca
 endif "if has
 
 "code folding = set foldenable
