@@ -33,13 +33,13 @@ set relativenumber
 set ignorecase
 set smartcase
 
-" show the first match for the pattern, while typing it
+" Show the first match for the pattern, while typing it
 set incsearch
 
-" highlight all search matches
+" Highlight all search matches
 set hlsearch
 
-" Set visual bell instead of beep
+" Set visual bell instead of beep.
 " Good when not wearing earphone at work
 set visualbell
 
@@ -82,7 +82,7 @@ abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
 
-"set the global map leader variable so that:
+" Set the global map leader variable so that:
 :let mapleader = ","
 
 " Remap semicolon to map (for Ex commands) since colon is important

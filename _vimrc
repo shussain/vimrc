@@ -30,7 +30,7 @@ nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 " For vim-airline, require statusline to appear
 set laststatus=2
 
-" drag visual configuration
+" Drag visual configuration
 runtime plugin/dragvisuals.vim
 vmap <expr> h DVB_Drag('left')
 vmap <expr> l DVB_Drag('right')
@@ -38,16 +38,16 @@ vmap <expr> j DVB_Drag('down')
 vmap <expr> k DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
 
-filetype off                   " required!
+filetype off                   " Required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
+" Let Vundle manage Vundle
 " required!
 Plugin 'gmarik/vundle'
 
-" original repos on github
+" Vim plugin
 "Plugin 'itchyny/calendar.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'atweiden/vim-dragvisuals'
@@ -88,7 +88,7 @@ let g:syntastic_quiet_messages = { "level": "warnings" }
 "let g:calendar_google_calendar = 1
 "let g:calendar_google_task = 1
 
-filetype plugin indent on     " required!
+filetype plugin indent on     " Required!
 
 if has ("autocmd")
 
