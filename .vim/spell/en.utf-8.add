@@ -20,6 +20,9 @@ ldns
 Openswan
 Django
 MQ
+MTU
+IPv6
+IPv4
 RabbitMQ
 Postgres
 PostgreSQL
@@ -27,6 +30,8 @@ Ubuntu
 sudo
 OSW
 IPsec
+xl2tp
+l2tp
 L2TP
 l2tpd
 LNS
