@@ -71,6 +71,7 @@ set colorcolumn=80
 :nnoremap j gj
 
 " Spelling changes. Fix common typos and mistakes I make
+abbreviate adn and
 abbreviate eg e.g.
 abbreviate etc etc.
 abbreviate teh the
