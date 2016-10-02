@@ -3,7 +3,7 @@
 Personal .vimrc and content of .vim directory
 
 ## Plugins
-Managed via Vundle. To install all plugins, do the following:
-* Source the vimrc config file
-* In Vim, enter: PluginInstall
+
+Plugins are managed with Vundle. In vim do the following:
+* To install all plugins, enter: PluginInstall
 * To update plugins, enter: PluginUpdate
