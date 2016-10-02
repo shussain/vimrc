@@ -108,8 +108,8 @@ nnoremap ; :
 :nmap <Leader>v :e $HOME/_vimrc<CR>
 
 " Loading important files
-nnoremap <Leader>f <Esc>:e ~/Desktop/finances.txt<CR>
-nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt<CR>
+nnoremap <Leader>f <Esc>:e ~/Desktop/finances.txt.gpg<CR>
+nnoremap <Leader>i <Esc>:e ~/Desktop/internet_accounts.txt.gpg<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL

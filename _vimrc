@@ -69,6 +69,7 @@ Plugin 'tpope/vim-speeddating'
 Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/snipMate'
 Plugin 'scrooloose/syntastic'
+Plugin 'jamessan/vim-gnupg'
 
 " Colorscheme
 Bundle 'nanotech/jellybeans.vim'
