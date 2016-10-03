@@ -57,6 +57,8 @@ endif
 
 set spell spelllang=en_ca
 
+set clipboard^=unnamedplus,unnamed
+
 " Place a line at 80 columns to visibly mark the point where most code should
 " end or be wrapped
 set colorcolumn=80
