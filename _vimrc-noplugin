@@ -219,10 +219,7 @@ if has ("autocmd")
 
   set nowrap "columns=80 lines=30
 
-  set tabstop=4
-  set softtabstop=4
-  set shiftwidth=4
-  set expandtab
+  set tabstop=4 shiftwidth=4 expandtab softtabstop=4
 endif "if has
 
 "code folding = set foldenable
