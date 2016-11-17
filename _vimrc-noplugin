@@ -59,6 +59,15 @@ set spell spelllang=en_ca
 
 set clipboard^=unnamedplus,unnamed
 
+
+" Wrapping & column stuff
+set wrapmargin=8
+set nowrap "columns=80 lines=30
+
+" Tabbing insanity. All of the below is to have 4 spaces added when TAB is hit
+set tabstop=4 shiftwidth=4 softtabstop=4
+set expandtab
+
 " Place a line at 80 columns to visibly mark the point where most code should
 " end or be wrapped
 set colorcolumn=80
@@ -194,12 +203,6 @@ if has ("autocmd")
 
   " DEFAULT SETTING FOR FILES THAT ARE NOT GROUPED
 
-  " Wrapping & column stuff
-  set wrapmargin=8
-
-  set nowrap "columns=80 lines=30
-
-  set tabstop=4 shiftwidth=4 expandtab softtabstop=4
 endif "if has
 
 "code folding = set foldenable
