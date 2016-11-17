@@ -174,7 +174,7 @@ map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDu
 
 filetype plugin indent on     " required!
 
-if has ("autocmd")
+if has("autocmd")
   " Enabled file type detection and file-type specific plugins.
   " filetype plugin on indent
   filetype plugin on
@@ -186,7 +186,6 @@ if has ("autocmd")
   augroup py
     autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
     autocmd BufReadPre,FileReadPre      *.py set softtabstop=4 autoindent
-    autocmd BufReadPre,FileReadPre      *.py set background=dark
   augroup END
 
   augroup ruby
@@ -197,11 +196,8 @@ if has ("autocmd")
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
     autocmd BufReadPre,FileReadPre      *.txt set syntax=off
-    autocmd BufReadPre,FileReadPre      *.txt set spell
   augroup END
 
-
-  " DEFAULT SETTING FOR FILES THAT ARE NOT GROUPED
 
 endif "if has
 
