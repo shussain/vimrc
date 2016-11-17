@@ -173,35 +173,15 @@ if has ("autocmd")
   " Automatically remove all trailing whitespace before saving
   autocmd BufWritePre * :%s/\s\+$//e
 
-  " Java code.
-  augroup java
-    autocmd BufReadPre,FileReadPre      *.java set nowrap
-  augroup END
-
   " Python
   augroup py
-    autocmd BufReadPre,FileReadPre      *.py set nowrap
     autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
     autocmd BufReadPre,FileReadPre      *.py set softtabstop=4 autoindent
     autocmd BufReadPre,FileReadPre      *.py set background=dark
   augroup END
 
   augroup ruby
-    autocmd BufReadPre,FileReadPre      *.rb set nowrap
     autocmd BufReadPre,FileReadPre      *.rb set smarttab autowrite
-  augroup END
-
-  augroup cs
-    autocmd BufReadPre,FileReadPre      *.cs set nowrap
-  augroup END
-
-  augroup aspx
-    autocmd BufReadPre,FileReadPre      *.aspx set nowrap
-  augroup END
-
-  " Properties file
-  augroup properties
-    autocmd BufReadPre,FileReadPre      *.properties set nowrap
   augroup END
 
   " Texts file
