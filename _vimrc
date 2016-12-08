@@ -85,6 +85,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_quiet_messages = { "level": "warnings" }
 
+  " Specify color scheme
+  colorscheme apprentice
+
 " Calendar.vim -> using Google calendar and tasks
 "let g:calendar_google_calendar = 1
 "let g:calendar_google_task = 1
@@ -93,7 +96,5 @@ filetype plugin indent on     " Required!
 
 if has ("autocmd")
 
-  " Graphical settings
-  colorscheme apprentice
 
 endif "if has
