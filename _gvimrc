@@ -5,4 +5,5 @@ if has("gui_running")
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
+  :source $HOME/_vimrc
 endif
