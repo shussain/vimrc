@@ -12,8 +12,8 @@ nnoremap <F2> :NumbersToggle<CR>
 " Remap for Tagbar
 nmap  <F3>   :TagbarToggle<CR>
 
-" Remap for Gundo
-nmap  <F4>   :GundoToggle<CR>
+" Remap for undotree
+nmap  <F4>   :UndotreeToggle<CR>
 
 " Remap for vim-latex-live-preview
 nmap  <F5>   <Esc>:LLPStartPreview<CR>
@@ -61,7 +61,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'sjl/gundo.vim'
+Plugin 'mbbill/undotree'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
