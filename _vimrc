@@ -16,7 +16,7 @@ nmap  <F3>   :TagbarToggle<CR>
 nmap  <F4>   :UndotreeToggle<CR>
 
 " Remap for vim-latex-live-preview
-nmap  <F5>   <Esc>:LLPStartPreview<CR>
+nmap  <F7>   <Esc>:LLPStartPreview<CR>
 
 " ctrl-p
 let g:ctrlp_map = ',p'
