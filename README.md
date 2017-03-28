@@ -9,7 +9,7 @@ stow -R vimrc       # if you have stow
 OR
 
 cp -R .vim $HOME    # Copy the .vim file to the home directory
-cp _* $HOME         # Cpy _vimrc* and _gvimrc to the home directory
+cp _* $HOME         # Copy _vimrc* and _gvimrc to the home directory
 
 ## Plugins
 
