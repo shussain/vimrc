@@ -113,10 +113,6 @@ nnoremap ; :
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSincerely, <CR><CR>Samir Hussain<Esc>
 
-" Make it easy to update/reload _vimrc
-:nmap <Leader>s :source $HOME/_vimrc<CR>
-:nmap <Leader>v :e $HOME/_vimrc<CR>
-
 " Loading important files
 nnoremap <Leader>f <Esc>:e $HOME/Desktop/finances.txt.gpg<CR>
 nnoremap <Leader>i <Esc>:e $HOME/Desktop/internet_accounts.txt.gpg<CR>
