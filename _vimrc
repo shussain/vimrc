@@ -25,6 +25,11 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_switch_buffer = 'O'
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
+" vimux
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vm :VimuxPromptCommand("make ")<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+
 nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 
 " For vim-airline, require statusline to appear
@@ -70,6 +75,7 @@ Plugin 'vim-scripts/a.vim'
 Plugin 'vim-scripts/snipMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'jamessan/vim-gnupg'
+Plugin 'benmills/vimux'
 
 " Colorscheme
 Bundle 'nanotech/jellybeans.vim'
