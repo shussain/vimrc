@@ -148,7 +148,7 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
 " Save a file you edited in vim/vi without the needed permissions
 :map <Leader>save <Esc>:w !sudo tee %<CR>
 
-" Running make
+" Running make - can be partially replaced for vimux prompt command
 " :set makeprg=gmake\ \CC=gcc296
 :map <Leader>m :make<CR>:copen<CR>
 
