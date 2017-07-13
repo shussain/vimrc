@@ -54,12 +54,11 @@ Plugin 'gmarik/vundle'
 
 " Vim plugin
 "Plugin 'itchyny/calendar.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'atweiden/vim-dragvisuals'
 Plugin 'bling/vim-airline'
 Plugin 'shussain/vim-matchit'
 Plugin 'godlygeek/tabular'
 Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'mhinz/vim-startify'
@@ -76,6 +75,7 @@ Plugin 'vim-scripts/snipMate'
 Plugin 'scrooloose/syntastic'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'benmills/vimux'
+Plugin 'atweiden/vim-dragvisuals'
 
 " Colorscheme
 Bundle 'nanotech/jellybeans.vim'
