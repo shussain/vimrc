@@ -9,11 +9,11 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Toggle between absolute and relative numbering - using numbers.vim
 nnoremap <F2> :NumbersToggle<CR>
 
-" Remap for Tagbar
-nmap  <F3>   :TagbarToggle<CR>
-
 " Remap for undotree
-nmap  <F4>   :UndotreeToggle<CR>
+nmap  <F3>   :UndotreeToggle<CR>
+
+" Remap for Tagbar
+nmap  <F4>   :TagbarToggle<CR>
 
 " Remap for vim-latex-live-preview
 nmap  <F7>   <Esc>:LLPStartPreview<CR>
