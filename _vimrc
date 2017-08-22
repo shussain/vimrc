@@ -76,10 +76,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'jamessan/vim-gnupg'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
-
-" Colorscheme
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'romainl/Apprentice'
+Plugin 'flazz/vim-colorschemes'
 
 " Syntastic configuration
 set statusline+=%#errormsg#
