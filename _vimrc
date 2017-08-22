@@ -15,6 +15,9 @@ nmap  <F3>   :UndotreeToggle<CR>
 " Remap for Tagbar
 nmap  <F4>   :TagbarToggle<CR>
 
+" Remap for Tagbar
+nmap  <F5>   :Goyo<CR>
+
 " Remap for vim-latex-live-preview
 nmap  <F7>   <Esc>:LLPStartPreview<CR>
 
@@ -62,6 +65,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
 Plugin 'xuhdev/vim-latex-live-preview'
 Plugin 'mhinz/vim-startify'
+Plugin 'junegunn/goyo.vim'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
