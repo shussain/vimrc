@@ -4,15 +4,17 @@ Personal .vimrc and content of .vim directory
 
 # Installation
 
-stow -R vimrc       # if you have stow
+If you have stow: 
+_stow -R vimrc_
 
-OR
+**OR**
 
-cp -R .vim $HOME    # Copy the .vim file to the home directory
-cp _* $HOME         # Copy _vimrc* and _gvimrc to the home directory
+Copy the .vim file to the home directory: _cp -R .vim $HOME_
 
-## Plugins
+Copy _vimrc* and _gvimrc to the home directory: _cp * $HOME_
+
+# Plugins
 
 Plugins are managed with Vundle. In vim do the following:
-* To install all plugins, enter: PluginInstall
-* To update plugins, enter: PluginUpdate
+* To install all plugins, enter: *PluginInstall*
+* To update plugins, enter: *PluginUpdate*
