@@ -2,6 +2,8 @@
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Monospace\ 10
+  elseif has("x11")
+    set guifont=Monospace\ 10
   elseif has("gui_win32")
     set guifont=Consolas:h11:cANSI
   endif
