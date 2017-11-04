@@ -100,8 +100,8 @@ let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
 let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly
 let g:ConqueGdb_Leader = ';'
 
-  " Specify color scheme
-  colorscheme apprentice
+" Specify color scheme
+colorscheme apprentice
 
 " Calendar.vim -> using Google calendar and tasks
 "let g:calendar_google_calendar = 1
