@@ -101,7 +101,7 @@ let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is c
 let g:ConqueGdb_Leader = ';'
 
 " Specify color scheme
-colorscheme apprentice
+colorscheme jellybeans
 
 " Calendar.vim -> using Google calendar and tasks
 "let g:calendar_google_calendar = 1
