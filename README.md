@@ -4,7 +4,7 @@ Personal .vimrc and content of .vim directory
 
 # Installation
 
-If you have stow: 
+If you have stow:
 _stow -R vimrc_
 
 **OR**
