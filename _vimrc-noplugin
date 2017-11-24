@@ -191,7 +191,6 @@ if has("autocmd")
   " Texts file
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
-    autocmd BufReadPre,FileReadPre      *.txt set syntax=off
   augroup END
 
 
