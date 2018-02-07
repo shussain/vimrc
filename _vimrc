@@ -9,7 +9,7 @@ let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 " Toggle between absolute and relative numbering - using numbers.vim
 nnoremap <F2> :NumbersToggle<CR>
 
-" Remap for undotree
+" Remap for Undotree
 nmap  <F3>   :UndotreeToggle<CR>
 
 " Remap for Tagbar
@@ -28,7 +28,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_switch_buffer = 'O'
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
-" vimux
+" Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vm :VimuxPromptCommand("make ")<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
@@ -96,8 +96,8 @@ let g:syntastic_quiet_messages = { "level": "warnings" }
 
 " Conque-GDB configuration
 let g:ConqueTerm_Color = 2         " 1: strip colour after 200 lines, 2: always with colour
-let g:ConqueTerm_CloseOnEnd = 1    " close conque when program ends running
-let g:ConqueTerm_StartMessages = 0 " display warning messages if conqueTerm is configured incorrectly
+let g:ConqueTerm_CloseOnEnd = 1    " close Conque when program ends running
+let g:ConqueTerm_StartMessages = 0 " display warning messages if ConqueTerm is configured incorrectly
 let g:ConqueGdb_Leader = ';'
 
 " Specify colour scheme
