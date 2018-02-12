@@ -4,7 +4,8 @@ Personal .vimrc and content of .vim directory
 
 # Installation
 
-If you have stow:
+If you have Stow (a software installation manager which
+uses symlinks to keep files separated):
 _stow -R vimrc_
 
 **OR**
