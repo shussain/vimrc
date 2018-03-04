@@ -15,7 +15,7 @@ set ruler
 set encoding=utf-8
 
 " Keep cursor away from edges of screen.
-set so=5
+set so=3
 
 set shell=/bin/zsh
 
