@@ -1,6 +1,7 @@
 " vimrc for when all plugins are installed
 
 source $HOME/_vimrc-noplugin
+source $HOME/_vimrc-linux
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project

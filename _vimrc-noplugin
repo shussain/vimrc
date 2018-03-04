@@ -17,8 +17,6 @@ set encoding=utf-8
 " Keep cursor away from edges of screen.
 set so=3
 
-set shell=/bin/zsh
-
 " Autocomplete for file entry
 set wim=list:longest,full
 
