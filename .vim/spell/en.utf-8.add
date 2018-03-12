@@ -70,6 +70,9 @@ LAC
 IPsec
 OSW
 Openswan
+OpenDNSSEC
+Libreswan
+strongSwan
 IKEv1
 IKEv2
 ISAKMP
