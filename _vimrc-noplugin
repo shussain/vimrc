@@ -100,7 +100,7 @@ nnoremap ; :
 
 " Make it easy to update/reload _vimrc
 :nmap <Leader>s :source $HOME/_vimrc<CR>
-:nmap <Leader>v :e $HOME/_vimrc<CR>
+:nmap <Leader>v :NERDTree $HOME/dot-files/vimrc/<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
