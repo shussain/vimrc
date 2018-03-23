@@ -178,12 +178,12 @@ if has("autocmd")
 
   " Python
   augroup py
-    autocmd BufReadPre,FileReadPre      *.py set smarttab autowrite
-    autocmd BufReadPre,FileReadPre      *.py set softtabstop=4 autoindent
+    autocmd BufReadPre,FileReadPre      *.py set smarttab softtabstop=4
+    autocmd BufReadPre,FileReadPre      *.py set autoindent
   augroup END
 
   augroup ruby
-    autocmd BufReadPre,FileReadPre      *.rb set smarttab autowrite
+    autocmd BufReadPre,FileReadPre      *.rb set smarttab
   augroup END
 
   " Texts file
