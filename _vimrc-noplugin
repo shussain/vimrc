@@ -178,8 +178,7 @@ if has("autocmd")
 
   " Python
   augroup py
-    autocmd BufReadPre,FileReadPre      *.py set smarttab softtabstop=4
-    autocmd BufReadPre,FileReadPre      *.py set autoindent
+    autocmd BufReadPre,FileReadPre      *.py set smarttab softtabstop=4 autoindent
   augroup END
 
   augroup ruby
