@@ -10,9 +10,12 @@ set showmode
 set showcmd
 
 " Formatting
-set number
-set ruler
 set encoding=utf-8
+set ruler
+
+set number
+" Show the line number relative to the line with the cursor in front of each line
+set relativenumber
 
 " Keep cursor away from edges of screen.
 set so=3
@@ -23,9 +26,6 @@ set wim=list:longest,full
 " Autocomplete for Ctrl-N and Ctrl-P. We are looking at open/hidden buffers
 " and tags
 set complete=.,b,u,t
-
-" Show the line number relative to the line with the cursor in front of each line
-set relativenumber
 
 " Ignore cases for searching
 set ignorecase
