@@ -85,6 +85,7 @@ Plugin 'jamessan/vim-gnupg'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'gko/vim-coloresque'
 
 " Syntastic configuration
 set statusline+=%#errormsg#
