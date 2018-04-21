@@ -12,6 +12,7 @@ set showcmd
 " Formatting
 set encoding=utf-8
 set ruler
+set title
 
 set number
 " Show the line number relative to the line with the cursor in front of each line
