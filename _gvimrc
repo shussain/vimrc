@@ -6,6 +6,8 @@ if has("gui_running")
     set guifont=Monospace\ 10
   elseif has("gui_win32")
     set guifont=Consolas:h10:cANSI
+  elseif has("gui_macvim")
+    set guifont=Consolas:h10:cANSI
   endif
   :source $HOME/_vimrc
 endif
