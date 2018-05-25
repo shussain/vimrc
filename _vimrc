@@ -1,6 +1,9 @@
 " Simplified vimrc for use when using an older instance of vim or
 " where there are no vim plugins
 
+source $HOME/_vimrc-plugin
+source $HOME/_vimrc-linux
+
 set nocompatible
 
 " Initial restarting
