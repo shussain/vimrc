@@ -33,9 +33,6 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 
 nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 
-" For vim-airline, require statusline to appear
-set laststatus=2
-
 " Drag visual configuration
 runtime plugin/dragvisuals.vim
 vmap <expr> h DVB_Drag('left')
