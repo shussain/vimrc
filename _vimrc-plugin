@@ -54,7 +54,6 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " Vim plugin
-"Plugin 'itchyny/calendar.vim'
 Plugin 'bling/vim-airline'
 Plugin 'shussain/vim-matchit'
 Plugin 'godlygeek/tabular'
@@ -104,6 +103,7 @@ let g:ConqueGdb_Leader = ';'
 colorscheme jellybeans
 
 " Calendar.vim -> using Google calendar and tasks
+"Plugin 'itchyny/calendar.vim'
 "let g:calendar_google_calendar = 1
 "let g:calendar_google_task = 1
 
