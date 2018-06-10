@@ -1,0 +1,14 @@
+" Personal vim configurations and settings
+
+" Make it easy to update/reload _vimrc
+:nmap <Leader>s :source $HOME/_vimrc<CR>
+:nmap <Leader>v :NERDTree $HOME/dot-files/vimrc/<CR>
+
+" Loading important files
+nnoremap <Leader>f <Esc>:e $HOME/Desktop/finances.txt.gpg<CR>
+nnoremap <Leader>i <Esc>:e $HOME/Desktop/internet_accounts.txt.gpg<CR>
+
+" Silly shortcut for summing up entries in custom finance tracker. Highlight
+" the financial item and copy it (using CTRL-V)
+:nmap <Leader>math <Esc>:tabnew<CR>p<ESC>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR><ESC>gg<ESC>yy<ESC>:!python -c "print <C-r>""<CR>
+

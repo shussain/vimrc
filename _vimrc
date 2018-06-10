@@ -1,8 +1,12 @@
 " Simplified vimrc for use when using an older instance of vim or
 " where there are no vim plugins
 
+" Set the global map leader variable so that:
+:let mapleader = ","
+
 source $HOME/_vimrc-plugin
 source $HOME/_vimrc-linux
+source $HOME/_vimrc-personal
 
 set nocompatible
 
@@ -95,16 +99,9 @@ abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
 
-" Set the global map leader variable so that:
-:let mapleader = ","
-
 " Remap semicolon to map (for Ex commands) since colon is important
 " NOTE TO SELF: ; is used to repeat last motion so it may be useful
 nnoremap ; :
-
-" Make it easy to update/reload _vimrc
-:nmap <Leader>s :source $HOME/_vimrc<CR>
-:nmap <Leader>v :NERDTree $HOME/dot-files/vimrc/<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
@@ -114,10 +111,6 @@ nnoremap ; :
 
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSincerely, <CR><CR>Samir Hussain<Esc>
-
-" Loading important files
-nnoremap <Leader>f <Esc>:e $HOME/Desktop/finances.txt.gpg<CR>
-nnoremap <Leader>i <Esc>:e $HOME/Desktop/internet_accounts.txt.gpg<CR>
 
 " Have the tabbed editing work with internet browser type functionality
 " You just use comma instead of CTRL
@@ -139,10 +132,6 @@ nnoremap <Leader>i <Esc>:e $HOME/Desktop/internet_accounts.txt.gpg<CR>
 
 " Shortcut for having date in the format I prefer
 nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
-
-" Silly shortcut for summing up entries in custom finance tracker. Highlight
-" the financial item and copy it (using CTRL-V)
-:nmap <Leader>math <Esc>:tabnew<CR>p<ESC>:%s/[a-zA-Z]* [0-9]* //g<CR>:%s/(.*)//g<CR>:%s/\$//g<CR>:%s/\n/+/g<CR>:%s/+ *-/-/g<CR>:%s/ //g<CR>:s/+*$//g<CR><ESC>gg<ESC>yy<ESC>:!python -c "print <C-r>""<CR>
 
 " Word count
 :map <Leader>c g<C-G>
