@@ -65,7 +65,6 @@ set spell spelllang=en_ca
 
 set clipboard^=unnamedplus,unnamed
 
-
 " Wrapping & column stuff
 set wrapmargin=8
 set nowrap "columns=80 lines=30
