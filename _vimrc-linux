@@ -1,3 +1,13 @@
 " Linux specific commands
 
 set shell=/bin/zsh
+
+" Key mapping for web searches
+function! Terms(prompt)
+    call inputsave()
+    let searchterm = input(a:prompt . ': ')
+    call inputrestore()
+    return searchterm
+endfunction
+map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
+

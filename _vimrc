@@ -148,16 +148,6 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
 " Remap in order to make copy/paste easier
 nmap  <F6>   <Esc>:set nonumber\|set norelativenumber<CR>
 
-
-" Key mapping for web searches
-function! Terms(prompt)
-    call inputsave()
-    let searchterm = input(a:prompt . ': ')
-    call inputrestore()
-    return searchterm
-endfunction
-map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
-
 filetype plugin indent on     " required!
 
 if has("autocmd")
