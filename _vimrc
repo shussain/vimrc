@@ -10,9 +10,6 @@ source $HOME/_vimrc-personal
 
 set nocompatible
 
-" Initial restarting
-"autocmd!
-
 set showmode
 set showcmd
 
