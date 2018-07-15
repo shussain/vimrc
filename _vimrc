@@ -169,7 +169,4 @@ if has("autocmd")
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
   augroup END
 
-
 endif "if has
-
-"code folding = set foldenable

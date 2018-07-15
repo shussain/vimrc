@@ -10,4 +10,3 @@ function! Terms(prompt)
     return searchterm
 endfunction
 map <leader>l :! /usr/bin/firefox 'https://duckduckgo.com/?q=<c-r>=Terms("DuckDuckGo")<cr>'<cr><cr>
-
