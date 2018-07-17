@@ -108,12 +108,6 @@ nnoremap ; :
 " Shortcut for entering information
 :nmap <Leader>sam <Esc>aSincerely, <CR><CR>Samir Hussain<Esc>
 
-" Have the tabbed editing work with internet browser type functionality
-" You just use comma instead of CTRL
-:nmap <Leader>t <Esc>:tabnew<CR>
-:nmap <Leader>w <Esc>:tabclose<CR>
-:nmap <Leader><Tab> gt<CR>
-
 " Run ctags
 :nmap <Leader>] <Esc>:!ctags -R .<CR>
 
