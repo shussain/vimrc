@@ -1,7 +1,7 @@
 " Simplified vimrc for use when using an older instance of vim or
 " where there are no vim plugins
 
-" Set the global map leader variable so that:
+" Set the global map leader variable as comma (",")
 :let mapleader = ","
 
 source $HOME/_vimrc-plugin
@@ -100,7 +100,7 @@ abbreviate Philipinne Philippine
 nnoremap ; :
 
 " Have the tabbed editing work with internet browser type functionality
-" You just use comma instead of CTRL
+" You just use leader instead of CTRL
 :nmap <Leader>t <Esc>:tabnew<CR>
 :nmap <Leader>w <Esc>:tabclose<CR>
 :nmap <Leader><Tab> gt<CR>
