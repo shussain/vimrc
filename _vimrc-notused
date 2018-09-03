@@ -1,0 +1,9 @@
+" Remap Caps lock to be escape
+"au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+"au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
+
+" Calendar.vim -> using Google calendar and tasks
+"Plugin 'itchyny/calendar.vim'
+"let g:calendar_google_calendar = 1
+"let g:calendar_google_task = 1

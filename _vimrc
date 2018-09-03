@@ -75,10 +75,6 @@ set expandtab
 set colorcolumn=80
 "highlight colorcolumn ctermbg=233
 
-" Remap Caps lock to be escape
-"au VimEnter * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
-"au VimLeave * !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
-
 " Deal with going up and down with long line
 :nnoremap k gk
 :nnoremap j gj
