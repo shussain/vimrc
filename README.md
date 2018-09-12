@@ -2,7 +2,7 @@
 
 Personal .vimrc and content of .vim directory
 
-# Installation
+## Installation
 
 If you have Stow (a software installation manager which
 uses symlinks to keep files separated), then run:
@@ -14,7 +14,7 @@ Copy the .vim file to the home directory: _cp -R .vim $HOME_
 
 Copy _vimrc*_ and _gvimrc_ to the home directory: _cp * $HOME_
 
-# Plugins
+## Plugins
 
 Plugins are managed with Vundle (a plugin manger for vim). In vim do the following:
 
