@@ -150,10 +150,6 @@ if has("autocmd")
     autocmd BufReadPre,FileReadPre      *.py set smarttab softtabstop=4 autoindent
   augroup END
 
-  augroup ruby
-    autocmd BufReadPre,FileReadPre      *.rb set smarttab
-  augroup END
-
   " Texts file
   augroup mytext
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
