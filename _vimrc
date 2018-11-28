@@ -67,6 +67,7 @@ set wrapmargin=8
 set nowrap "columns=80 lines=30
 
 " Tabbing insanity. All of the below is to have 4 spaces added when TAB is hit
+set smarttab
 set tabstop=4 shiftwidth=4 softtabstop=4
 set expandtab
 
@@ -147,7 +148,7 @@ if has("autocmd")
 
   " Python
   augroup py
-    autocmd BufReadPre,FileReadPre      *.py set smarttab softtabstop=4 autoindent
+    autocmd BufReadPre,FileReadPre      *.py set autoindent
   augroup END
 
   " Texts file
