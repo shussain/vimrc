@@ -7,6 +7,7 @@
 source $HOME/_vimrc-plugin
 source $HOME/_vimrc-linux
 source $HOME/_vimrc-personal
+source $HOME/_vimrc-notused
 
 set nocompatible
 
