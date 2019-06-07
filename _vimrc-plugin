@@ -99,4 +99,4 @@ let g:ConqueTerm_StartMessages = 0 " display warning messages if ConqueTerm is c
 let g:ConqueGdb_Leader = ';'
 
 " Specify colour scheme
-colorscheme codedark
+colorscheme jellybeans
