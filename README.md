@@ -16,7 +16,8 @@ Copy _vimrc*_ and _gvimrc_ to the home directory: _cp * $HOME_
 
 ## Plugins
 
-Plugins are managed with Vundle (a plugin manger for vim). In vim do the following:
+Plugins are managed with Vundle (a plugin manger for vim). In vim do
+the following:
 
 * To install all plugins, enter: *PluginInstall*
 * To update plugins, enter: *PluginUpdate*
