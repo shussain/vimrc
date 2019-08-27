@@ -1864,3 +1864,13 @@ SPI
 SNMP
 wildcard
 PFP
+AVPs
+SCCRQ
+SCCRP
+SCCCN
+StopCCN
+ZLB
+NCP
+bitmask
+Tx
+CONFREQ
