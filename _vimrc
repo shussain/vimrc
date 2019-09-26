@@ -19,7 +19,6 @@ set encoding=utf-8
 set ruler
 set title
 
-set number
 " Show the line number relative to the line with the cursor in front of each line
 set relativenumber
 
@@ -34,8 +33,7 @@ set wim=list:longest,full
 set complete=.,b,u,t
 
 " Ignore cases for searching
-set ignorecase
-set smartcase
+set ignorecase smartcase
 
 " Show the first match for the pattern, while typing it
 set incsearch
