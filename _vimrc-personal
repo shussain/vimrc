@@ -1,7 +1,9 @@
 " Personal vim configurations and settings
 
-" Make it easy to update/reload _vimrc
+" Make it easy to reload _vimrc
 :nmap <Leader>s :source $HOME/_vimrc<CR>
+
+" View custom vimrc files
 :nmap <Leader>v :NERDTree $HOME/dot-files/vimrc/<CR>
 
 " Loading important files
