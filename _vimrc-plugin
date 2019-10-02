@@ -46,6 +46,27 @@ filetype off                   " Required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Syntastic configuration
+set statusline+=%#errormsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_puppet_checkers=['puppet-lint']
+let g:syntastic_yaml_checkers = ['yamllint']
+let g:syntastic_quiet_messages = { "level": "warnings" }
+
+" Conque-GDB configuration
+let g:ConqueTerm_Color = 0         " No terminal color
+let g:ConqueTerm_CloseOnEnd = 1    " close Conque when program ends running
+let g:ConqueTerm_StartMessages = 0 " display warning messages if ConqueTerm is configured incorrectly
+let g:ConqueGdb_Leader = ';'
+
+" Specify colour scheme
+colorscheme Monokai
+
 " Let Vundle manage Vundle
 " required!
 Plugin 'gmarik/vundle'
@@ -78,24 +99,3 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-scripts/snipMate'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
-
-" Syntastic configuration
-set statusline+=%#errormsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_puppet_checkers=['puppet-lint']
-let g:syntastic_yaml_checkers = ['yamllint']
-let g:syntastic_quiet_messages = { "level": "warnings" }
-
-" Conque-GDB configuration
-let g:ConqueTerm_Color = 0         " No terminal color
-let g:ConqueTerm_CloseOnEnd = 1    " close Conque when program ends running
-let g:ConqueTerm_StartMessages = 0 " display warning messages if ConqueTerm is configured incorrectly
-let g:ConqueGdb_Leader = ';'
-
-" Specify colour scheme
-colorscheme Monokai
