@@ -1,5 +1,43 @@
 " vimrc for when all plugins are installed
 
+filetype off                   " Required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+" required!
+Plugin 'gmarik/vundle'
+
+" Vim plugin
+Plugin 'mhinz/vim-startify'
+Plugin 'bling/vim-airline'
+Plugin 'shussain/vim-matchit'
+Plugin 'godlygeek/tabular'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'junegunn/goyo.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mbbill/undotree'
+Plugin 'jamessan/vim-gnupg'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'gko/vim-coloresque'
+Plugin 'tpope/vim-speeddating'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-dadbod'
+Plugin 'vim-scripts/a.vim'
+Plugin 'vim-scripts/Conque-GDB'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'rodjek/vim-puppet'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/snipMate'
+Plugin 'benmills/vimux'
+Plugin 'atweiden/vim-dragvisuals'
+
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
@@ -41,11 +79,6 @@ vmap <expr> j DVB_Drag('down')
 vmap <expr> k DVB_Drag('up')
 vmap <expr> D DVB_Duplicate()
 
-filetype off                   " Required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
 " Syntastic configuration
 set statusline+=%#errormsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -66,36 +99,3 @@ let g:ConqueGdb_Leader = ';'
 
 " Specify colour scheme
 colorscheme Monokai
-
-" Let Vundle manage Vundle
-" required!
-Plugin 'gmarik/vundle'
-
-" Vim plugin
-Plugin 'mhinz/vim-startify'
-Plugin 'bling/vim-airline'
-Plugin 'shussain/vim-matchit'
-Plugin 'godlygeek/tabular'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'xuhdev/vim-latex-live-preview'
-Plugin 'junegunn/goyo.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'mbbill/undotree'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'gko/vim-coloresque'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-dadbod'
-Plugin 'vim-scripts/a.vim'
-Plugin 'vim-scripts/Conque-GDB'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'rodjek/vim-puppet'
-Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/snipMate'
-Plugin 'benmills/vimux'
-Plugin 'atweiden/vim-dragvisuals'
