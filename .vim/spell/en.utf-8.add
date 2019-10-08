@@ -1940,3 +1940,9 @@ Dadi
 Khala
 Khalu
 Nani
+uWSGI
+CPython
+PyPy
+gcc
+WSGI
+FastCGI
