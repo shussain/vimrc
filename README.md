@@ -4,9 +4,8 @@ Personal .vimrc and content of .vim directory
 
 ## Installation
 
-If you have Stow (a software installation manager which
-uses symlinks to keep files separated), then run:
-_stow -R vimrc_
+If you have Stow (a software installation manager which uses
+symlinks to keep files separated), then run: _stow -R vimrc_
 
 **OR**
 
@@ -16,7 +15,7 @@ Copy _vimrc*_ and _gvimrc_ to the home directory: _cp *vimrc* $HOME_
 
 ## Plugins
 
-Plugins are managed with Vundle (a plugin manger for vim). In vim do
+Plugins are managed with Vundle (a plugin manger for vim). In Vim do
 the following:
 
 * To install all plugins, enter: *PluginInstall*
