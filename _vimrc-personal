@@ -6,7 +6,7 @@
 " View custom vimrc files
 :nmap <Leader>v :NERDTree $HOME/dot-files/vimrc/<CR>
 
-" Loading important files
+" Load important files
 nnoremap <Leader>f <Esc>:e $HOME/Desktop/finances.txt.gpg<CR>
 nnoremap <Leader>i <Esc>:e $HOME/Desktop/internet_accounts.txt.gpg<CR>
 

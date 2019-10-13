@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Let Vundle manage Vundle
-" required!
+" REQUIRED FOR LOADING PLUGINS!
 Plugin 'gmarik/vundle'
 
 " Vim plugin
