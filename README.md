@@ -1,6 +1,6 @@
 # vimrc
 
-Personal .vimrc and content of .vim directory
+Personal .vimrc files and content of .vim directory
 
 ## Installation
 
@@ -15,8 +15,8 @@ Copy _vimrc*_ and _gvimrc_ to the home directory: _cp *vimrc* $HOME_
 
 ## Plugins
 
-Plugins are managed with Vundle (a plugin manger for vim). In Vim do
-the following:
+Plugins are managed with Vundle (a plugin manger for vim). In Vim,
+run the following:
 
 * To install all plugins, enter: *PluginInstall*
 * To update plugins, enter: *PluginUpdate*
