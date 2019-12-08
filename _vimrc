@@ -20,7 +20,7 @@ set ruler
 set title
 
 " Show the line number relative to the line with the cursor in front of each line
-set relativenumber
+set relativenumber number
 
 " Keep cursor away from edges of screen.
 set so=3
