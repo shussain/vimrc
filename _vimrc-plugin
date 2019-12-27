@@ -41,9 +41,6 @@ Plugin 'atweiden/vim-dragvisuals'
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
 let NERDTreeIgnore=['.vim$', '\~$', '.*\.pyc$']
 
-" Toggle between absolute and relative numbering - using numbers.vim
-nnoremap <F2> :NumbersToggle<CR>
-
 " Remap for Undotree
 nmap  <F3>   :UndotreeToggle<CR>
 
