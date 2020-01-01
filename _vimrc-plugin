@@ -47,7 +47,7 @@ nmap  <F3>   :UndotreeToggle<CR>
 " Remap for Tagbar
 nmap  <F4>   :TagbarToggle<CR>
 
-" Remap for Tagbar
+" Remap for Goyo
 nmap  <F5>   :Goyo<CR>
 
 " Remap for vim-latex-live-preview
