@@ -60,12 +60,12 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_switch_buffer = 'O'
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
+nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
+
 " Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vm :VimuxPromptCommand("make ")<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
-
-nnoremap <Leader>b <Esc>:CtrlPBuffer<CR>
 
 " Drag visual configuration
 runtime plugin/dragvisuals.vim
