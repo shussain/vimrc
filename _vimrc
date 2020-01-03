@@ -133,7 +133,7 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
 :map <Leader>g :cw<CR>
 
 " Remap in order to make copy/paste easier
-nmap  <F6>   <Esc>:set nonumber\|set norelativenumber<CR>
+nmap  <F2>   <Esc>:set nonumber\|set norelativenumber<CR>
 
 filetype plugin indent on     " required!
 
