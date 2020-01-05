@@ -57,6 +57,7 @@ nmap  <F7>   <Esc>:LLPStartPreview<CR>
 let g:ctrlp_map = ',p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_follow_symlinks = '1'
 let g:ctrlp_switch_buffer = 'O'
 set wildignore+=*/tmp/*,*.so,*.swp,*.pyc
 
