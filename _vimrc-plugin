@@ -10,6 +10,7 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 " Vim plugin
+Plugin 'shussain/vim-matchit'
 Plugin 'mhinz/vim-startify'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
