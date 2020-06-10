@@ -117,7 +117,7 @@ nnoremap ; :
 :nmap <Leader>vs <Esc>:vsplit<CR>
 
 " Shortcut for having date in the format I prefer
-nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %T %Z")<CR><Esc>
+nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %R %Z")<CR><Esc>
 
 " Word count
 :map <Leader>c g<C-G>
