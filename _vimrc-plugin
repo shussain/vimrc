@@ -34,7 +34,6 @@ Plugin 'vim-scripts/Conque-GDB'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
-Plugin 'vim-scripts/snipMate'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
 
