@@ -34,6 +34,7 @@ Plugin 'vim-scripts/Conque-GDB'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/syntastic'
+Plugin 'dense-analysis/ale'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
 
@@ -87,6 +88,10 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_puppet_checkers=['puppet-lint']
 let g:syntastic_yaml_checkers = ['yamllint']
 let g:syntastic_quiet_messages = { "level": "warnings" }
+
+" ALE configuration
+let g:ale_enabled = 0
+let g:airline#extensions#ale#enabled = 1	" Set Airline will handle the rest.
 
 " Conque-GDB configuration
 let g:ConqueTerm_Color = 0         " No terminal color
