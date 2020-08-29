@@ -90,6 +90,7 @@ abbreviate definately definitely
 abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
+abbreviate MIke Mike
 
 " Remap semicolon to map (for Ex commands) since colon is important
 " NOTE TO SELF: ; is used to repeat last motion so it may be useful
