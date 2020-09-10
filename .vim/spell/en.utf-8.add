@@ -1,6 +1,9 @@
 DHPID
 DHPR
 AER
+DPD
+PWP
+ROEB
 Biso
 Samir
 Hussain
@@ -29,6 +32,9 @@ CREDIL
 Github
 Ubuntu
 PPA
+LoE
+ERD
+SME
 LTS
 sudo
 ACL
@@ -2174,8 +2180,4 @@ Logspout
 Blockbridge
 Portworx
 Twistlock
-LoE
 GeoProxy
-ERD
-SME
-ROEB
