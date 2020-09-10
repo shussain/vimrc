@@ -120,6 +120,9 @@ nnoremap ; :
 " Shortcut for having date in the format I prefer
 nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %H:%M %Z")<CR><Esc>
 
+" Shortcut for making work notes
+nmap <Leader>notes ggI<C-R>=strftime("%A, %B %d, %Y. %H:%M %Z")<CR><CR><CR>-----<CR><Esc>ggj
+
 " Word count
 :map <Leader>c g<C-G>
 
