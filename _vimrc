@@ -159,4 +159,9 @@ if has("autocmd")
     autocmd BufReadPre,FileReadPre      *.txt set wrap linebreak
   augroup END
 
+  " Redmine file
+  augroup redmine
+    autocmd BufNewFile,BufReadPre        *.redmine set filetype=redminewiki
+  augroup END
+
 endif "if has
