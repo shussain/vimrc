@@ -38,6 +38,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'dense-analysis/ale'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
+Plugin 'severin-lemaignan/vim-minimap'
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
