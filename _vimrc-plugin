@@ -38,6 +38,7 @@ Plugin 'dense-analysis/ale'
 Plugin 'benmills/vimux'
 Plugin 'atweiden/vim-dragvisuals'
 Plugin 'severin-lemaignan/vim-minimap'
+Plugin 'dracula/vim'
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
@@ -101,4 +102,4 @@ let g:ConqueTerm_StartMessages = 0 " display warning messages if ConqueTerm is c
 let g:ConqueGdb_Leader = ';'
 
 " Specify colour scheme
-colorscheme Monokai
+colorscheme dracula
