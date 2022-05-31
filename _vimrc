@@ -123,6 +123,9 @@ nmap <Leader>date a<C-R>=strftime("%A, %B %d, %Y. %H:%M %Z")<CR><Esc>
 " Shortcut for making work notes
 nmap <Leader>notes ggI<C-R>=strftime("%A, %B %d, %Y. %H:%M %Z")<CR><CR><CR>-----<CR><CR><Esc>ggj
 
+" Shortcut for large font
+nmap <leader>large <Esc>:set guifont=Monospace\ 24<CR><Esc>
+
 " Word count
 :map <Leader>c g<C-G>
 
