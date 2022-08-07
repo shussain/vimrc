@@ -3,3 +3,4 @@
 *.sw?
 *.bak
 tags
+.vim/plugged/*

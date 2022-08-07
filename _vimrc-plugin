@@ -2,43 +2,41 @@
 
 filetype off                   " Required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" Let Vundle manage Vundle
+" It is assumed that we have vim-plug installed
 " REQUIRED FOR LOADING PLUGINS!
-Plugin 'gmarik/vundle'
 
-" Vim plugin
-Plugin 'shussain/vim-matchit'
-Plugin 'mhinz/vim-startify'
-Plugin 'bling/vim-airline'
-Plugin 'godlygeek/tabular'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'majutsushi/tagbar'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'xuhdev/vim-latex-live-preview'
-Plugin 'junegunn/goyo.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'mbbill/undotree'
-Plugin 'jamessan/vim-gnupg'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'gko/vim-coloresque'
-Plugin 'tpope/vim-speeddating'
-Plugin 'tpope/vim-commentary'
-Plugin 'tpope/vim-dadbod'
-Plugin 'vim-scripts/a.vim'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'rodjek/vim-puppet'
-Plugin 's3rvac/vim-syntax-redminewiki'
-Plugin 'scrooloose/syntastic'
-Plugin 'dense-analysis/ale'
-Plugin 'benmills/vimux'
-Plugin 'atweiden/vim-dragvisuals'
-Plugin 'severin-lemaignan/vim-minimap'
-Plugin 'dracula/vim'
+" Vim plug
+call plug#begin()
+    Plug 'shussain/vim-matchit'
+    Plug 'mhinz/vim-startify'
+    Plug 'bling/vim-airline'
+    Plug 'godlygeek/tabular'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
+    Plug 'majutsushi/tagbar'
+    Plug 'ludovicchabant/vim-gutentags'
+    Plug 'xuhdev/vim-latex-live-preview'
+    Plug 'junegunn/goyo.vim'
+    Plug 'scrooloose/nerdtree'
+    Plug 'mbbill/undotree'
+    Plug 'jamessan/vim-gnupg'
+    Plug 'flazz/vim-colorschemes'
+    Plug 'gko/vim-coloresque'
+    Plug 'tpope/vim-speeddating'
+    Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-dadbod'
+    Plug 'vim-scripts/a.vim'
+    Plug 'terryma/vim-multiple-cursors'
+    Plug 'rodjek/vim-puppet'
+    Plug 's3rvac/vim-syntax-redminewiki'
+    Plug 'scrooloose/syntastic'
+    Plug 'dense-analysis/ale'
+    Plug 'benmills/vimux'
+    Plug 'atweiden/vim-dragvisuals'
+    Plug 'severin-lemaignan/vim-minimap'
+    Plug 'dracula/vim'
+call plug#end()
 
 " NerdTree app
 :nmap <Leader>n <Esc>:NERDTree $HOME/project
