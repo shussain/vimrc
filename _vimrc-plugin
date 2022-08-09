@@ -35,10 +35,8 @@ call plug#begin()
     Plug 'benmills/vimux'
     Plug 'atweiden/vim-dragvisuals'
     Plug 'severin-lemaignan/vim-minimap'
-    Plug 'dracula/vim'
-
-    " Plugins that I am experimenting with
     Plug 'subnut/nvim-ghost.nvim'
+    Plug 'dracula/vim'
 call plug#end()
 
 " NerdTree app
