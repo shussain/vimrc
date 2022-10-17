@@ -90,6 +90,7 @@ abbreviate definately definitely
 abbreviate Phillipinne Philippine
 abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
+abbreviate Apian Appian
 abbreviate MIke Mike
 
 " Remap semicolon to map (for Ex commands) since colon is important
