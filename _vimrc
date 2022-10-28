@@ -92,6 +92,7 @@ abbreviate Phillipine Philippine
 abbreviate Philipinne Philippine
 abbreviate Apian Appian
 abbreviate MIke Mike
+abbreviate Samera Sameera
 
 " Remap semicolon to map (for Ex commands) since colon is important
 " NOTE TO SELF: ; is used to repeat last motion so it may be useful
