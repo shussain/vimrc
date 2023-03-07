@@ -144,6 +144,8 @@ nmap <leader>large <Esc>:set guifont=Monospace\ 24<CR><Esc>
 " Remap in order to make copy/paste easier
 nmap  <F2>   <Esc>:set nonumber\|set norelativenumber<CR>
 
+:map <Leader>1 :.!toilet -w 200 -f term -F border<CR>
+
 filetype plugin indent on     " required!
 
 if has("autocmd")
