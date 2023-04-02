@@ -75,6 +75,10 @@ set expandtab
 set colorcolumn=80
 "highlight colorcolumn ctermbg=233
 
+if has("mouse")
+    set mouse=a
+endif
+
 " Deal with going up and down with long line
 :nnoremap k gk
 :nnoremap j gj
