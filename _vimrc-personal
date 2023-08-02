@@ -6,6 +6,9 @@
 " View custom vimrc files
 :nmap <Leader>v :NERDTree $HOME/dot-files/vimrc/<CR>
 
+" Specify swap dirctory
+:set directory=~/work/
+
 " Load important files
 nnoremap <Leader>f <Esc>:e $HOME/Desktop/finances.txt.gpg<CR>
 nnoremap <Leader>i <Esc>:e $HOME/Desktop/internet_accounts.txt.gpg<CR>
