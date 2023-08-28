@@ -2236,3 +2236,7 @@ WAF
 systemd
 and/!
 and
+puppetdb
+MinIO
+Greenbone
+Flexera
