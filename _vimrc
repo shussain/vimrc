@@ -52,6 +52,9 @@ set nobackup
 " it automatically gets disabled
 set paste
 
+" Set the commands to save in history. Default number is 20.
+set history=1000
+
 " When encrypting any file, use the much stronger blowfish algorithm
 if has("cryptmethod")
     set cryptmethod=blowfish
