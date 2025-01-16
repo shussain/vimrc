@@ -33,7 +33,7 @@ call plug#begin()
     Plug 'scrooloose/syntastic'
     Plug 'dense-analysis/ale'
     Plug 'benmills/vimux'
-    Plug 'atweiden/vim-dragvisuals'
+    Plug 'joshukraine/dragvisuals'
     Plug 'severin-lemaignan/vim-minimap'
     Plug 'subnut/nvim-ghost.nvim'
     Plug 'dracula/vim'
