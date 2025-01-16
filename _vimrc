@@ -11,8 +11,8 @@ source $HOME/_vimrc-notused
 
 set nocompatible
 
-set showmode
-set showcmd
+set showmode " show the mode we are in (Insert, visual, etc)
+set showcmd  " Show partial command
 
 " Formatting
 set encoding=utf-8
