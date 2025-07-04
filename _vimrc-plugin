@@ -35,7 +35,7 @@ call plug#begin()
     Plug 'benmills/vimux'
     Plug 'joshukraine/dragvisuals'
     Plug 'severin-lemaignan/vim-minimap'
-    Plug 'subnut/nvim-ghost.nvim'
+    "Plug 'subnut/nvim-ghost.nvim'
     Plug 'dracula/vim'
 call plug#end()
 
